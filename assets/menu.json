@@ -1,0 +1,295 @@
+{
+  "_README": "SOURCE OF TRUTH for the menu page. Edit this file, not the HTML. Every dish here is taken from the operational menu PDFs in _source-menus/. Do not add a dish, price, origin or allergen that is not in those PDFs. Allergen codes: L lactose, G gluten, O egg, N nuts, M mustard/sesame, S soy, Mo molluscs/shellfish.",
+  "_source": "debs menu new.pdf (food, 21pp) + Debs Bistro_boissons menu 2.pdf (drinks, Ete 2026)",
+  "_extracted": "2026-08-21",
+  "allergenKey": {
+    "L": { "en": "Lactose", "fr": "Lactose" },
+    "G": { "en": "Gluten", "fr": "Gluten" },
+    "O": { "en": "Egg", "fr": "Oeuf" },
+    "N": { "en": "Nuts and tree nuts", "fr": "Noix, noisettes, fruits a coque" },
+    "M": { "en": "Mustard and sesame", "fr": "Moutarde et sesame" },
+    "S": { "en": "Soy", "fr": "Soja" },
+    "Mo": { "en": "Molluscs, prawn, crab", "fr": "Mollusques, crevette, crabe" }
+  },
+  "meatOrigin": { "en": "Origin of all meat and fish: France.", "fr": "Origine de la viande et du poisson : France." },
+  "sections": [
+    {
+      "id": "lunch-dabbas",
+      "service": "lunch",
+      "title": { "en": "Lunch - Dabbas", "fr": "Dabba de Midi" },
+      "script": "टिफ़न डब्बा",
+      "note": { "en": "The weekday lunch box. Pilaf rice, a main, house raita and house slaw in one tray.", "fr": "Le dabba du midi. Riz pilaf, un plat, raita maison et slaw maison." },
+      "items": [
+        { "name": "Bombay Paneer Dabba", "price": "14.5", "veg": true, "allergens": ["L"],
+          "fr": "Riz pilaf / Mutter paneer (fromage paneer dans une sauce onctueuse de tomate pomodoro et creme, feuilles de fenugrec et garam masala maison, petites pommes de terre et petits pois) / raita maison / slaw maison.",
+          "en": "Pilaf rice, mutter paneer (paneer in a smooth pomodoro tomato and cream sauce with fenugreek leaves and house garam masala, small potatoes and peas), house raita, house slaw." },
+        { "name": "Chennai Idly Dabba", "price": "12.5", "veg": true, "allergens": ["M", "N"],
+          "fr": "Idly, gateaux de riz vapeur / ragout sambhar (soupe de lentilles au tamarin, coriandre, legumes de saison et feuilles de curry) / chutney noix de coco, gingembre et poivron.",
+          "en": "Idly, steamed rice cakes, sambhar stew (lentil soup with tamarind, coriander, seasonal vegetables and curry leaves), coconut, ginger and pepper chutney." },
+        { "name": "Lucknow Boeuf Nehari Dabba", "price": "14.5", "veg": false, "allergens": ["L", "N"],
+          "fr": "Riz pilaf / beef nihari (jarret de boeuf mijote lentement dans notre nihari masala maison, sauce profonde et onctueuse, finition coriandre) / raita maison / slaw maison.",
+          "en": "Pilaf rice, beef nihari (beef shank slow-cooked in our house nihari masala, deep and unctuous sauce, finished with coriander), house raita, house slaw." },
+        { "name": "Delhi Chicken Dabba", "price": "13.5", "veg": false, "allergens": ["L"],
+          "fr": "Riz pilaf / chicken butter masala, cuisses de poulet grillees au tandoori masala dans une sauce onctueuse de tomate pomodoro et creme, feuilles de fenugrec et garam masala maison / slaw maison / raita maison.",
+          "en": "Pilaf rice, chicken butter masala, chicken thigh grilled in tandoori masala in a smooth pomodoro tomato and cream sauce with fenugreek leaves and house garam masala, house slaw, house raita." },
+        { "name": "Goan Pork Vindaloo Dabba", "price": "13.5", "veg": false, "allergens": ["M", "N"],
+          "fr": "Riz pilaf / goan pork vindaloo (porc mijote dans une marinade au vinaigre, ail, piments secs et epices goanaises torrefiees, sauce acidulee et aromatique) / raita maison / slaw maison.",
+          "en": "Pilaf rice, Goan pork vindaloo (pork simmered in a vinegar, garlic, dried chilli and roasted Goan spice marinade, sharp and aromatic sauce), house raita, house slaw." },
+        { "name": "Mangalore Fish Curry Dabba", "price": "15.5", "veg": false, "allergens": ["M", "N"],
+          "fr": "Riz pilaf / poisson du jour marine puis poele, servi dans une sauce onctueuse a base de mangue fraiche, lait de coco, feuilles de curry et notre melange d'epices de Mangalore / slaw maison / raita maison.",
+          "en": "Pilaf rice, fish of the day marinated then pan-seared, in a smooth sauce of fresh mango, coconut milk, curry leaves and our Mangalore spice blend, house slaw, house raita." }
+      ]
+    },
+    {
+      "id": "lunch-indi-bowls",
+      "service": "lunch",
+      "title": { "en": "Lunch - Indi Bowls", "fr": "Indi Bowls" },
+      "script": "इंडी बाउल",
+      "note": { "en": "Half hot, half cold. Built for the working day.", "fr": "Moitie chaud, moitie froid. Pense pour la journee de travail." },
+      "items": [
+        { "name": "Kolkata Reshmi Kebab / Tandoori Tikka / Vegan Seekh Bowl", "price": "14.5", "veg": false, "allergens": ["L"],
+          "fr": "Riz pilaf, concombre, tomate cerise, kachumber aux cacahuetes / reshmi kebab (poulet marine a l'ail et melange aromatique d'epices maison, grille au tandoor) ou tandoori chicken tikka (cuisse de poulet sans os marinee toute une nuit dans un melange maison d'epices d'Old Delhi).",
+          "en": "Pilaf rice, cucumber, cherry tomato and peanut kachumber, with reshmi kebab (chicken marinated in garlic and a house aromatic spice blend, grilled in the tandoor) or tandoori chicken tikka (boneless chicken thigh marinated overnight in a house Old Delhi spice blend)." },
+        { "name": "Guntur Sambhar Vada Bowl", "price": "14.5", "veg": true, "allergens": ["L", "N"],
+          "fr": "Beignets vada, legumes grilles, ragout sambhar (soupe de lentilles au tamarin, coriandre, legumes de saison et feuilles de curry), chutney noix de coco, gingembre et poivron.",
+          "en": "Vada fritters, grilled vegetables, sambhar stew (lentil soup with tamarind, coriander, seasonal vegetables and curry leaves), coconut, ginger and pepper chutney." },
+        { "name": "Benaras Samosa Bowl", "price": "12.9", "veg": true, "allergens": ["L", "G"],
+          "fr": "Samosa aux legumes, salade de concombre, tomates cerises et cacahuetes, pois chiches masala, chutney au tamarin, poudres de cumin fume et sev.",
+          "en": "Vegetable samosa, cucumber, cherry tomato and peanut salad, masala chickpeas, tamarind chutney, smoked cumin powders and sev." },
+        { "name": "Kerala Agneau Biriyani Bowl", "price": "15.5", "veg": false, "allergens": ["L", "N"],
+          "fr": "Agneau mijote lentement dans un melange d'epices du Kerala, avec du lait de coco et du poivre noir de Malabar, superpose avec du riz basmati, des raisins secs, des noix de cajou, des oignons confits et de la menthe fraiche / salade de concombre, tomates cerises et cacahuetes / raita.",
+          "en": "Lamb slow-cooked in a Kerala spice blend with coconut milk and Malabar black pepper, layered with basmati rice, raisins, cashews, confit onions and fresh mint, cucumber, cherry tomato and peanut salad, raita." }
+      ]
+    },
+    {
+      "id": "starters",
+      "service": "dinner",
+      "title": { "en": "Starters - Street Food", "fr": "Entrees - Street Food" },
+      "note": { "en": "The first bites.", "fr": "Les premieres bouchees." },
+      "items": [
+        { "name": "Kolkata Puchka", "price": "7.5", "veg": true, "allergens": ["G"],
+          "fr": "Patisserie creuse et croustillante 'puri' farcie d'un melange de pommes de terre epicees, avec une sauce au citron vert, au cumin et au tamarin.",
+          "en": "Hollow crisp puri shells filled with spiced potato, with a lime, cumin and tamarind water." },
+        { "name": "Benaras Samosa Chaat", "price": "7.5", "veg": true, "allergens": ["G", "L"],
+          "fr": "Samosa aux legumes avec ragout de pois chiches, chutney au tamarin (aigre-douce) et au yaourt, poudres de cumin fume et sev.",
+          "en": "Vegetable samosa with chickpea stew, sweet-sour tamarind chutney and yoghurt, smoked cumin powders and sev." },
+        { "name": "Madurai Sambar Vada", "price": "7", "veg": true, "allergens": ["L", "N"],
+          "fr": "Vadas croustillants aux lentilles, nappes d'un sambhar chaud et parfume facon Guntur, prepare avec des lentilles jaunes, des tomates et du tamarin, puis fini a la coriandre fraiche. Servi chaud avec chutney de coco.",
+          "en": "Crisp lentil vadas under a hot, fragrant Guntur-style sambhar of yellow lentils, tomato and tamarind, finished with fresh coriander. Served hot with coconut chutney." },
+        { "name": "Mumbai Dahi Puri", "price": "7.5", "veg": true, "allergens": ["G", "L"],
+          "fr": "Patisserie creuse et croustillante 'puri' farcie de pois chiches et d'un melange de pommes de terre epicees, chutney au tamarin et au yaourt, chips de sev.",
+          "en": "Hollow crisp puri shells filled with chickpeas and spiced potato, tamarind chutney and yoghurt, sev." },
+        { "name": "Darjeeling Chili Chicken Wings", "price": "7.9", "veg": false, "allergens": ["N", "G"],
+          "fr": "Les ailes de poulet marinees au gingembre sont frites croustillantes, puis sautees avec de la sauce soja caramelisee, des poivrons, des oignons verts et un melange d'epices maison.",
+          "en": "Ginger-marinated chicken wings fried crisp, then tossed with caramelised soy, peppers, spring onion and a house spice blend." }
+      ]
+    },
+    {
+      "id": "grill-tandoor",
+      "service": "dinner",
+      "title": { "en": "Grill - Tandoor", "fr": "Grill Tandoor" },
+      "note": { "en": "To share between two as a starter, or one as a main.", "fr": "A partager pour 2 en entree, ou pour 1 en plat." },
+      "items": [
+        { "name": "Kolkata Reshmi Malai Kebab", "price": "16", "veg": false, "allergens": ["G", "L", "N"],
+          "fr": "Poulet desosse marine dans de la creme, une pate de noix de cajou et des epices douces de Calcutta, grille sur brochette jusqu'a devenir fondant, juteux et legerement caramelise. Servi avec salade maison et chutney a la menthe.",
+          "en": "Boneless chicken marinated in cream, cashew paste and the mild spices of Calcutta, grilled on the skewer until tender, juicy and lightly caramelised. Served with house salad and mint chutney." },
+        { "name": "Old Delhi Tandoori Chicken Tikka", "price": "16", "veg": false, "allergens": ["G", "L"],
+          "fr": "Cuisse de poulet sans os marinee toute une nuit dans un melange maison d'epices d'Old Delhi, cuite lentement au charbon dans le tandoor pour une saveur fumee et profonde. Servie avec salade maison et chutney a la menthe.",
+          "en": "Boneless chicken thigh marinated overnight in a house Old Delhi spice blend, cooked slowly over charcoal in the tandoor for a deep, smoky flavour. Served with house salad and mint chutney." },
+        { "name": "Lucknow Vegan Seekh Kebab", "price": "15", "veg": true, "allergens": ["G"],
+          "fr": "Hache vegetal melange a des herbes, oignons et epices d'Inde du Nord, faconne sur brochette puis grille jusqu'a etre legerement croustillant a l'exterieur et moelleux a l'interieur. Servi avec salade maison et chutney a la menthe.",
+          "en": "Plant mince worked with herbs, onion and North Indian spices, shaped on the skewer and grilled until lightly crisp outside and soft within. Served with house salad and mint chutney." }
+      ]
+    },
+    {
+      "id": "dosa",
+      "service": "dinner",
+      "title": { "en": "Dosa", "fr": "Dosa" },
+      "note": { "en": "A thin pancake of fermented rice and lentils, crisp or soft, served with sambhar and our house chutneys.", "fr": "Une crepe fine a base de riz et lentilles fermentes, croustillante ou moelleuse, servie avec sambhar et nos chutneys maison." },
+      "chefNote": { "en": "The dosa is one of the dishes closest to my heart, from childhood breakfasts to late nights at university. Every trip to South India shows me another version, another filling, another story. Here are a few of my favourites.", "fr": "La dosa est l'un des plats les plus proches de mon coeur, des petits-dejeuners d'enfance aux envies tardives a l'universite. Chaque voyage en Inde du Sud m'en revele une nouvelle version, une nouvelle garniture, une nouvelle histoire. En voici quelques-unes de mes preferees." },
+      "items": [
+        { "name": "Chennai Paper Roast Masala Dosa", "price": "18", "veg": true, "allergens": [],
+          "fr": "Grande dosa tres fine et ultra croustillante, farcie du masala de pommes de terre classique d'Inde du Sud, servie avec sambhar et chutneys.",
+          "en": "A large, very thin, ultra crisp dosa filled with the classic South Indian potato masala, served with sambhar and chutneys." },
+        { "name": "Mysore Masala Dosa", "price": "18", "veg": true, "allergens": [],
+          "fr": "Dosa garnie de pommes de terre epicees et de notre chutney rouge releve facon Mysore avec ghee, servie avec sambhar et chutneys.",
+          "en": "Dosa filled with spiced potato and our hot Mysore-style red chutney with ghee, served with sambhar and chutneys." },
+        { "name": "Bombay Fusion Dosa", "price": "18", "veg": true, "allergens": [],
+          "fr": "Dosa inspiree des stands de rue de Bombay, garnie de legumes, fromage, creme fraiche et notre sauce speciale de Mumbai faite maison.",
+          "en": "A dosa from the street stalls of Bombay, filled with vegetables, cheese, creme fraiche and our house Mumbai special sauce." },
+        { "name": "Karaikudi Crab Dosa", "price": "19", "veg": false, "allergens": ["Mo"],
+          "fr": "Une dosa-pancake garnie de chair de crabe cuisinee aux epices Chettinad, finie aux herbes et servie avec sambhar et chutneys.",
+          "en": "A pancake-style dosa filled with crab cooked in Chettinad spices, finished with herbs and served with sambhar and chutneys." },
+        { "name": "Udipi Veggie Uttapam", "price": "17", "veg": true, "allergens": [],
+          "fr": "Dosa epaisse facon pancake, garnie d'oignons emincés et de legumes grilles, legerement croustillante sur les bords et saupoudree de notre podi maison, servie avec sambhar et chutneys.",
+          "en": "A thick pancake-style dosa topped with sliced onion and grilled vegetables, crisp at the edges and dusted with our house podi, served with sambhar and chutneys." }
+      ]
+    },
+    {
+      "id": "mains",
+      "service": "dinner",
+      "title": { "en": "Mains", "fr": "Les Plats" },
+      "items": [
+        { "name": "Lucknow Os a Moelle Nehari", "price": "18", "veg": false, "allergens": ["G", "M"],
+          "fr": "Jarret de boeuf longuement braise dans un nihari masala maison jusqu'a ce que la viande se detache, servi avec un os a moelle grille. A deguster idealement avec un naan nature ou a l'ail pour savourer la sauce epicee jusqu'a la derniere goutte.",
+          "en": "Beef shank braised at length in a house nihari masala until the meat gives way, served with a roasted marrow bone. Best eaten with a plain or garlic naan, to the last of the sauce." },
+        { "name": "Navratna Burrata Korma", "price": "19", "veg": true, "allergens": ["L", "N"],
+          "fr": "Burrata cremeuse deposee sur un korma doux a base de noix de cajou, inspire des sabzis de Jaipur, avec legumes de saison, fromage paneer, fruits secs, noix et epices delicates mijotes dans une sauce riche et veloutee.",
+          "en": "Creamy burrata set on a mild cashew korma drawn from the sabzis of Jaipur, with seasonal vegetables, paneer, dried fruit, nuts and delicate spices in a rich, velvety sauce." },
+        { "name": "Kerala Agneau Biryani", "price": "19", "veg": false, "allergens": ["N"],
+          "fr": "Agneau mijote lentement avec des epices du Kerala, du lait de coco et du poivre noir de Malabar, superpose a du riz basmati parfume, oignons confits, noix de cajou, raisins secs et menthe. Servi avec un raita maison et une sauce au coco.",
+          "en": "Lamb slow-cooked with Kerala spices, coconut milk and Malabar black pepper, layered with fragrant basmati rice, confit onions, cashews, raisins and mint. Served with house raita and a coconut sauce." },
+        { "name": "Delhi Butter Chicken / Vegan Chicken", "price": "18", "veg": false, "allergens": ["L"],
+          "fr": "Cuisse de poulet sans os grillee au tandoor ou version vegetale a base de proteine de soja, nappee d'une sauce onctueuse a la tomate pomodoro, fenugrec seche et beurre infuse au piment fume.",
+          "en": "Boneless chicken thigh grilled in the tandoor, or a plant version made with soy protein, under a smooth pomodoro tomato sauce with dried fenugreek and smoked chilli butter." },
+        { "name": "Amritsar Chole Kulche", "price": "18", "veg": true, "allergens": ["M", "G"],
+          "fr": "Un kulcha moelleux, comme une focaccia indienne farcie, rempli de legumes grilles, mais, pomme de terre et paneer, croustillant a l'exterieur et tendre a l'interieur. Servi avec des pois chiches au curry mijotes cinq heures, garnis d'oignons, coriandre, citron vert et chutney au tamarin.",
+          "en": "A soft kulcha, an Indian stuffed focaccia, filled with grilled vegetables, corn, potato and paneer, crisp outside and tender within. Served with curried chickpeas simmered five hours, with onion, coriander, lime and tamarind chutney." },
+        { "name": "Mangalore Fish Curry", "price": "19", "veg": false, "allergens": ["M", "N"],
+          "fr": "Poisson du jour marine puis poele, servi dans une sauce onctueuse a base de mangue fraiche, lait de coco, feuilles de curry et notre melange d'epices de Mangalore. Une bouchee, et vous etes en ete, au bord de l'ocean.",
+          "en": "Fish of the day marinated then pan-seared, in a smooth sauce of fresh mango, coconut milk, curry leaves and our Mangalore spice blend. One mouthful and it is summer, by the ocean." },
+        { "name": "Pork Vindaloo", "price": "18", "veg": false, "allergens": ["M"],
+          "fr": "Porc mijote lentement dans une marinade vindaloo au vinaigre, a l'ail, aux piments secs et aux epices torrefiees, reduit jusqu'a ce que la viande soit fondante et la sauce profonde, acidulee et relevee.",
+          "en": "Pork slow-cooked in a vindaloo marinade of vinegar, garlic, dried chillies and roasted spices, reduced until the meat is meltingly soft and the sauce deep, sharp and hot." }
+      ]
+    },
+    {
+      "id": "breads",
+      "service": "dinner",
+      "title": { "en": "Naan and Breads", "fr": "Naan et Pains" },
+      "items": [
+        { "name": "Nature", "price": "3", "veg": true, "allergens": ["G"], "fr": "Naan nature.", "en": "Plain naan." },
+        { "name": "Ail", "price": "4", "veg": true, "allergens": ["G"], "fr": "Naan a l'ail.", "en": "Garlic naan." },
+        { "name": "Malabar Paratha", "price": "3.5", "veg": true, "allergens": ["G"], "fr": "Paratha malabar.", "en": "Malabar paratha." },
+        { "name": "Vache Qui Rit", "price": "3.5", "veg": true, "allergens": ["G", "L"], "fr": "Naan fourre a la Vache Qui Rit.", "en": "Naan stuffed with Vache Qui Rit." },
+        { "name": "Gorgonzola", "price": "4", "veg": true, "allergens": ["G", "L"], "fr": "Naan fourre au gorgonzola.", "en": "Naan stuffed with gorgonzola." },
+        { "name": "Camembert", "price": "4.5", "veg": true, "allergens": ["G", "L"], "fr": "Naan fourre au camembert.", "en": "Naan stuffed with camembert." },
+        { "name": "Comte", "price": "4.5", "veg": true, "allergens": ["G", "L"], "fr": "Naan fourre au comte.", "en": "Naan stuffed with Comte." },
+        { "name": "Reblochon", "price": "4.5", "veg": true, "allergens": ["G", "L"], "fr": "Naan fourre au reblochon.", "en": "Naan stuffed with reblochon." }
+      ]
+    },
+    {
+      "id": "sides",
+      "service": "dinner",
+      "title": { "en": "Sides", "fr": "Supplements" },
+      "items": [
+        { "name": "Masala Aloo", "price": "6", "veg": true, "allergens": [], "fr": "Masala aloo.", "en": "Spiced potato." },
+        { "name": "Sambar", "price": "6", "veg": true, "allergens": [], "fr": "Sambar.", "en": "Sambar." },
+        { "name": "Riz Pilaf", "price": "6", "veg": true, "allergens": [], "fr": "Riz pilaf.", "en": "Pilaf rice." }
+      ]
+    },
+    {
+      "id": "desserts",
+      "service": "dinner",
+      "title": { "en": "Desserts", "fr": "Desserts" },
+      "note": { "en": "Lunch portions are served at a smaller size and price.", "fr": "Portions du midi servies en plus petit format." },
+      "items": [
+        { "name": "Shrikhand Cannoli", "price": "6.5", "priceLunch": "3.5", "veg": true, "allergens": ["L", "O"],
+          "fr": "Cannoli croustillant garni de yaourt egoutte et de mascarpone, parfume a la mangue Alphonso. Fini avec une touche de pistache concassee.",
+          "en": "A crisp cannoli filled with strained yoghurt and mascarpone, scented with Alphonso mango, finished with crushed pistachio." },
+        { "name": "Sheer Khurma", "price": "6", "priceLunch": "3.5", "veg": true, "allergens": ["L", "N"],
+          "fr": "Creme anglaise a la cardamome, vermicelles croustillants, pistache et rose.",
+          "en": "Cardamom custard, crisp vermicelli, pistachio and rose." },
+        { "name": "Chai Gourmand", "price": "9", "priceLunch": "8", "veg": true, "allergens": ["L", "N"],
+          "fr": "Petite coupe chai ou espresso, 3 confiseries indiennes de la saison.",
+          "en": "A small cup of chai or espresso with three Indian sweets of the season." },
+        { "name": "Kulfi du Moment", "price": "6", "priceLunch": "3.5", "veg": true, "allergens": ["L"],
+          "fr": "Glace indienne faite maison.",
+          "en": "House-made Indian ice cream." }
+      ]
+    },
+    {
+      "id": "cocktails",
+      "service": "drinks",
+      "title": { "en": "Cocktails", "fr": "Cocktails" },
+      "items": [
+        { "name": "Gin Daas", "price": "10", "veg": true, "allergens": [], "tags": ["Fresh", "Sharp", "Light"],
+          "fr": "Gin, gingembre frais, concombre, citron vert, Kombuch'Alpes Ginger Beer.",
+          "en": "Gin, fresh ginger, cucumber, lime, Kombuch'Alpes ginger beer." },
+        { "name": "Kerala Colada", "price": "10", "veg": true, "allergens": [], "tags": ["Tropical", "Creamy", "Sunlit"],
+          "fr": "Rhum epice, mangue, lait de coco, ananas.",
+          "en": "Spiced rum, mango, coconut milk, pineapple." },
+        { "name": "Desi Rose", "price": "10", "veg": true, "allergens": [], "new": true, "tags": ["Amber", "Floral", "Soft", "Refreshing"],
+          "fr": "Old Monk, Roohafza, petales de rose, gulkand, Kombuch'Alpes Ginger Beer.",
+          "en": "Old Monk, Roohafza, rose petals, gulkand, Kombuch'Alpes ginger beer." },
+        { "name": "Kairi Mule", "price": "10", "veg": true, "allergens": [], "new": true, "tags": ["Bright", "Tart", "Indian"],
+          "fr": "Vodka, mangue verte, citron vert, Kombuch'Alpes Ginger Beer.",
+          "en": "Vodka, green mango, lime, Kombuch'Alpes ginger beer." }
+      ]
+    },
+    {
+      "id": "beers",
+      "service": "drinks",
+      "title": { "en": "Beers", "fr": "Bieres" },
+      "note": { "en": "On tap and in bottle, mostly from the region.", "fr": "A la pression et en bouteille, principalement de la region." },
+      "items": [
+        { "name": "Grihete", "price": "4 / 7", "veg": true, "allergens": ["G"], "tags": ["Pilsner", "On tap", "Half 4 EUR", "Pint 7 EUR"],
+          "fr": "Pilsner, brasserie regionale. La biere du robinet, fraiche, franche, toujours la.",
+          "en": "Pilsner from a regional brewery. The tap beer: cold, straight, always there." },
+        { "name": "La Vieille Mule", "price": "6", "veg": true, "allergens": ["G"], "tags": ["IPA", "6.3 deg", "Drome"],
+          "fr": "Amere, directe, sans excuses. La biere que vous commanderez deux fois.",
+          "en": "Bitter, direct, unapologetic. The one you order twice." },
+        { "name": "Nomade - Nuit Blanche", "price": "5.5", "veg": true, "allergens": ["G"], "tags": ["Blanche", "5.2 deg", "Honey camomile", "Drome"],
+          "fr": "Florale, douce, inattendue. La plus indienne de nos bieres francaises.",
+          "en": "Floral, soft, unexpected. The most Indian of our French beers." },
+        { "name": "Ibex - Rocket Fuel", "price": "5.5", "veg": true, "allergens": ["G"], "tags": ["NEIPA", "5.8 deg", "Haute-Savoie"],
+          "fr": "Tropicale, ronde, sans amertume agressive. Pour ceux qui pensaient ne pas aimer les IPA.",
+          "en": "Tropical, round, no aggressive bitterness. For people who thought they disliked IPA." },
+        { "name": "Barricade des Mauvais Garcons - La Canaille", "price": "6", "veg": true, "allergens": ["G"], "tags": ["Barley wine", "9.6 deg", "Loire"],
+          "fr": "Intense, presque sucree, proche d'un digestif. Une biere pour finir le repas.",
+          "en": "Intense, almost sweet, close to a digestif. A beer to end the meal on." },
+        { "name": "Janis Chopine", "price": "5.5", "veg": true, "allergens": ["G"], "tags": ["NEIPA", "5.4 deg", "Drome"],
+          "fr": "Houblonnee, juteuse, tropicale. Une NEIPA qui ne prend rien au serieux.",
+          "en": "Hoppy, juicy, tropical. A NEIPA that takes nothing seriously." },
+        { "name": "Kingfisher", "price": "5.5", "veg": true, "allergens": ["G"], "tags": ["4.9 deg", "India"],
+          "fr": "Legere, doree, desalterante. La biere indienne qui accompagne tous les currys.",
+          "en": "Light, golden, thirst-quenching. The Indian beer that goes with every curry." }
+      ]
+    },
+    {
+      "id": "wine",
+      "service": "drinks",
+      "title": { "en": "Wine", "fr": "Vins" },
+      "note": { "en": "Our wines change with the season and follow the menu. Ask your server for the current list: wines from the region, other appellations, and Indian wines. Glass 4.50, 25cl 8, 50cl 16, bottle 25.", "fr": "Nos vins changent au gre des saisons et s'adaptent a notre menu. Demandez a votre serveur la carte du moment : vins de la region, autres appellations, et des vins indiens. Verre 4,50, 25cl 8, 50cl 16, bouteille 25." },
+      "items": [
+        { "name": "Cote du Rhone", "price": "4.5 / 8 / 16 / 25", "veg": true, "allergens": [], "tags": ["Red"], "fr": "Rouge.", "en": "Red." },
+        { "name": "Cote de Provence", "price": "4.5 / 8 / 16 / 25", "veg": true, "allergens": [], "tags": ["Rose"], "fr": "Rose.", "en": "Rose." },
+        { "name": "Viognier", "price": "4.5 / 8 / 16 / 25", "veg": true, "allergens": [], "tags": ["White"], "fr": "Blanc.", "en": "White." }
+      ]
+    },
+    {
+      "id": "soft-drinks",
+      "service": "drinks",
+      "title": { "en": "Soft Drinks", "fr": "Boissons Froides Sans Alcool" },
+      "items": [
+        { "name": "Nimbu Pani", "price": "6", "veg": true, "allergens": [],
+          "fr": "Limonade indienne maison : citron vert, poudre de mangue verte, cumin. 45cl.",
+          "en": "House Indian lemonade: lime, green mango powder, cumin. 45cl." },
+        { "name": "Limonade Mangue", "price": "6", "veg": true, "allergens": [],
+          "fr": "Limonade indienne maison : jus de citron vert, mangue Alphonso, cumin. 45cl.",
+          "en": "House Indian lemonade: lime juice, Alphonso mango, cumin. 45cl." },
+        { "name": "Lassi", "price": "4.5", "veg": true, "allergens": ["L"],
+          "fr": "Milkshake au yaourt, au choix : mangue, rose ou nature. 20cl.",
+          "en": "Yoghurt milkshake, your choice of mango, rose or plain. 20cl." },
+        { "name": "Limonade Bio", "price": "4", "veg": true, "allergens": [], "fr": "Limonade bio.", "en": "Organic lemonade." },
+        { "name": "The Glace", "price": "4", "veg": true, "allergens": [], "fr": "The glace.", "en": "Iced tea." },
+        { "name": "Coca / Soft", "price": "3.5", "veg": true, "allergens": [], "fr": "Coca ou soft.", "en": "Coca-Cola or soft drink." },
+        { "name": "Eau Gazeuse", "price": "3.5 / 5", "veg": true, "allergens": [], "fr": "33cl ou 50cl.", "en": "33cl or 50cl." },
+        { "name": "Ice Coffee", "price": "5", "veg": true, "allergens": [], "fr": "Ice coffee.", "en": "Iced coffee." },
+        { "name": "Ice Coffee Latte", "price": "6", "veg": true, "allergens": ["L"], "fr": "Ice coffee latte.", "en": "Iced coffee latte." }
+      ]
+    },
+    {
+      "id": "hot-drinks",
+      "service": "drinks",
+      "title": { "en": "Hot Drinks", "fr": "Boissons Chaudes" },
+      "items": [
+        { "name": "Chai", "price": "4", "veg": true, "allergens": ["L"], "fr": "Chai.", "en": "Chai." },
+        { "name": "Spiced Chocolat Chaud", "price": "6", "veg": true, "allergens": ["L"], "fr": "Chocolat chaud epice.", "en": "Spiced hot chocolate." },
+        { "name": "Lebu Cha", "price": "4", "veg": true, "allergens": [], "fr": "The au citron epice.", "en": "Spiced lemon tea." },
+        { "name": "Filter Kapi", "price": "3.5", "veg": true, "allergens": ["L"], "fr": "Cappuccino indien.", "en": "Indian filter coffee." },
+        { "name": "Espresso", "price": "2", "veg": true, "allergens": [], "fr": "Espresso.", "en": "Espresso." }
+      ]
+    }
+  ]
+}
