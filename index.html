@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Deb's Bistro Lyon | Regional Indian Restaurant &amp; Catering</title>
-<meta name="description" content="Regional Indian cooking researched across India and served in Lyon. Lunch Dabbas, sharing dinners, Saturday Thali and catering by Chef Debdutta Gupta.">
+<title>Best Indian Restaurant in Lyon | Deb's Bistro</title>
+<meta name="description" content="Discover Deb's Bistro, an authentic Indian restaurant in Lyon serving flavourful Indian cuisine, warm hospitality and unforgettable dining experiences.">
 <!-- LEDGER J1: staging only. While this build lives on *.vercel.app it must stay out of the
      index so it cannot compete with the client's own domain. Remove noindex AND the
      disallow-all robots.txt at domain cutover, not before. -->
@@ -12,8 +12,8 @@
 <link rel="alternate" hreflang="en" href="https://www.debsbistro.com/">
 <link rel="alternate" hreflang="fr" href="https://www.debsbistro.com/fr">
 <meta property="og:type" content="restaurant">
-<meta property="og:title" content="Deb's Bistro Lyon | Regional Indian Restaurant &amp; Catering">
-<meta property="og:description" content="Regional Indian cooking researched across India and served in Lyon. Lunch Dabbas, sharing dinners, Saturday Thali and catering by Chef Debdutta Gupta.">
+<meta property="og:title" content="Best Indian Restaurant in Lyon | Deb's Bistro">
+<meta property="og:description" content="Discover Deb's Bistro, an authentic Indian restaurant in Lyon serving flavourful Indian cuisine, warm hospitality and unforgettable dining experiences.">
 <meta property="og:image" content="https://www.debsbistro.com/media/img/interior-warm-dining.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +50,151 @@
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "15:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "19:00", "closes": "23:00" }
   ]
+}
+</script>
+<!-- SEO 23 Sep 2026: Breadcrumb, Menu and WebSite schema from the SEO team doc. Prices from assets/menu.json and the FR homepage (Thali 24.99). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "https://www.debsbistro.com/#breadcrumb",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.debsbistro.com/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "Deb's Bistro Menu",
+  "url": "https://www.debsbistro.com/menu",
+  "inLanguage": "en",
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "Lunch: Dabbas & Indi Bowls",
+      "description": "City-based Dabbas and half-hot, half-cold Indi Bowls built for the working day: complete, balanced Indian food for dine-in, takeaway and delivery.",
+      "url": "https://www.debsbistro.com/menu#lunch-dabbas",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Lunch Dabba",
+          "description": "A city-based Dabba tray: pilaf rice, a main, house raita and house slaw.",
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "12.50",
+            "highPrice": "15.50",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Indi Bowl",
+          "description": "A half-hot, half-cold bowl built for a balanced midday meal.",
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "12.90",
+            "highPrice": "15.50",
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Dinner: The Sharing Table",
+      "description": "A wider menu for friends, families and groups: order across regions, share dishes, add cocktails or beer.",
+      "url": "https://www.debsbistro.com/menu#starters",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Kerala Lamb Biryani",
+          "description": "Layered and finished on dum, sealed and slow-cooked in its own steam.",
+          "offers": {
+            "@type": "Offer",
+            "price": "19.00",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Delhi Butter Chicken",
+          "description": "Benchmarked against the version cooked in Old Delhi, balancing tomato, fenugreek, smoke and butter.",
+          "offers": {
+            "@type": "Offer",
+            "price": "18.00",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Mangalore Fish Curry",
+          "description": "Fresh mango, coconut milk, curry leaves and a Mangalore spice blend, in a regionally accurate balance.",
+          "offers": {
+            "@type": "Offer",
+            "price": "19.00",
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Lucknow Nihari",
+          "description": "Beef shank braised at length in the house nihari masala, served with a roasted marrow bone.",
+          "offers": {
+            "@type": "Offer",
+            "price": "18.00",
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Saturday Thali",
+      "description": "A savoury Indian thali served every Saturday lunch, changing region and menu from week to week.",
+      "url": "https://www.debsbistro.com/saturday-thali",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Saturday Thali",
+          "description": "A regional thali that changes weekly; this week's thali is announced on Instagram.",
+          "offers": {
+            "@type": "Offer",
+            "price": "24.99",
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Deb's Bistro Lyon",
+  "alternateName": "देब्स बिस्त्रो",
+  "url": "https://www.debsbistro.com/",
+  "description": "Discover Deb's Bistro, an authentic Indian restaurant in Lyon serving flavourful Indian cuisine, warm hospitality and unforgettable dining experiences.",
+  "inLanguage": [
+    "en",
+    "fr"
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Deb's Bistro",
+    "url": "https://www.debsbistro.com/",
+    "sameAs": [
+      "https://www.instagram.com/debs_bistro/"
+    ]
+  }
 }
 </script>
 <!-- LEDGER V17/J4: hours and rating supplied by Manan from the Google Business Profile,
@@ -90,7 +235,7 @@
   <div class="burst" aria-hidden="true">Since<br>2019<br>&middot;<br>Lyon 7e</div>
   <div class="hero-in">
     <h1>Deb&rsquo;s Bistro</h1>
-    <p class="hero-tag">Regional Indian cooking, researched across India and cooked in Lyon.</p>
+    <p class="hero-tag">Best Indian Restaurant in Lyon</p>
     <div class="hero-ctas">
       <a class="btn btn-solid" href="https://debsbistro.fr/en/booking">Reserve a table</a>
       <a class="btn btn-ghost" href="menu.html">See the menu</a>
@@ -130,7 +275,7 @@
         <img src="media/img/gallery-table-spread.jpg" alt="A shared table of regional Indian dishes at Deb's Bistro" loading="lazy" width="1200" height="900">
         <div class="way-body">
           <span class="way-kicker">Dinner</span><h3>The sharing table</h3>
-          <p>A more expansive menu for friends, families and groups. Order across regions, share dishes, add cocktails or beer and stay. The mood is relaxed, generous and bistro-like.</p>
+          <p>A more expansive menu for friends, families and groups at our Indian restaurant in Lyon. Order across regions, share dishes, add cocktails or beer and stay. The mood is relaxed, generous and bistro-like.</p>
           <a class="signboard alt" href="menu.html#starters">See the dinner menu</a>
         </div>
       </article>
@@ -138,12 +283,38 @@
         <img src="media/img/gallery-brunch-thali.jpg" alt="A savoury Indian thali served at Saturday lunch" loading="lazy" width="1079" height="1349">
         <div class="way-body">
           <span class="way-kicker">Saturday</span><h3>Brunch Thali</h3>
-          <p>Every Saturday lunch: a savory Indian thali that changes from week to week. The current thali is announced on Instagram.</p>
+          <p>Every Saturday lunch: a savoury Indian thali on Rue Lortet that changes from week to week. The current thali is announced on Instagram.</p>
           <a class="signboard teal" href="saturday-thali.html">See this Saturday&rsquo;s Thali</a>
         </div>
       </article>
     </div>
-    <p class="lead" style="margin-top:2.4rem"><b style="color:var(--mustard-soft)">Takeaway &amp; delivery.</b> The lunch Dabbas and Indi Bowls are the takeaway and delivery offer. <a href="https://usellweb.co/shops/debs-bistro" style="color:var(--cream)" rel="noopener">Order online</a>.</p>
+  </div>
+</section>
+
+<!-- SEO 23 Sep 2026 (MarketinCrew SEO team): two new sections, keyword "Indian restaurant in Lyon 7". -->
+<section id="lyon-7">
+  <div class="wrap">
+    <span class="k">26 Rue Lortet, Lyon 7<sup>e</sup></span>
+    <h2 class="h2 intro-narrow">Authentic Indian Restaurant in Lyon 7</h2>
+    <p class="lead">Most Indian restaurants in Lyon work from one curry base and stretch it into ten dishes. We do the opposite. Chef Debdutta Gupta built this Indian restaurant in Lyon 7 on a simple rule: a dish only goes on the menu once he has tasted the benchmark where it comes from. House-made spice blends, slow layered cooking, and handis sourced from Chawri Bazaar in Delhi turn that research into dishes that taste regional rather than generic.</p>
+    <p class="lead" style="margin-top:.9rem">At 26 Rue Lortet, that same principle shapes everything on the table, from weekday lunch to the Saturday Thali, which changes region every week. For anyone searching for real Indian cuisine that feels closer to India than to a template, Deb&rsquo;s Bistro in Lyon 7 is built around that exact difference.</p>
+    <div class="signboards">
+      <a class="signboard" href="https://debsbistro.fr/en/booking">Reserve a table</a>
+      <a class="signboard alt" href="menu.html">See the menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="teal-block plaster" id="takeaway">
+  <div class="wrap">
+    <span class="k">Takeaway &amp; delivery</span>
+    <h2 class="h2 intro-narrow">Takeaway &amp; Delivery of Indian Cuisine in Lyon</h2>
+    <p class="lead">Some meals deserve to travel further: past the lunch box and into a wedding hall, a boardroom, a table full of family. At Deb&rsquo;s Bistro, we bring Indian food delivery across Lyon to every occasion, carrying the same regional cooking that defines our dining room straight to your event. From parties to corporate boardroom lunches, we treat every booking, big or small, with the same care, whether it is a celebration guests remember for years or a quiet dinner shared at home.</p>
+    <p class="lead" style="margin-top:.9rem">For everyday takeaway and delivery, the lunch Dabbas and Indi Bowls are ordered online. For events, tell us what you are planning.</p>
+    <div class="signboards">
+      <a class="signboard" href="https://usellweb.co/shops/debs-bistro" rel="noopener">Order now</a>
+      <a class="signboard alt" href="catering-events.html#enquiry">Plan an event</a>
+    </div>
   </div>
 </section>
 
@@ -157,7 +328,7 @@
       <div>
         <span class="pd-city">Dum Biryani</span>
         <h3>The rice is not supposed to look the same all the way through.</h3>
-        <p>A biryani is layered and finished on dum, sealed and cooked slowly in its own steam. Different grains carry different amounts of aroma, spice and colour, and that unevenness is the point. If every grain matches, something has been stirred that should not have been.</p>
+        <p>A biryani is layered and finished on dum, sealed and cooked slowly in its own steam, the mark of proper Indian cuisine in Lyon. Different grains carry different amounts of aroma, spice and colour, and that unevenness is the point. If every grain matches, something has been stirred that should not have been.</p>
       </div>
     </div>
 
@@ -175,7 +346,7 @@
       <div>
         <span class="pd-city">Mangalore Fish Curry</span>
         <h3>You have to eat it in Mangalore before you can cook it in Lyon.</h3>
-        <p>Fresh mango, coconut milk, curry leaves and a Mangalore spice blend, held in a balance that is regional rather than general. The sourcing matters as much as the method, and the only way to know the target is to have tasted it on the coast.</p>
+        <p>Fresh mango, coconut milk, curry leaves and a Mangalore spice blend, held in a balance that is regional rather than general, is what regional Indian food in Lyon should taste like. The sourcing matters as much as the method, and the only way to know the target is to have tasted it on the coast.</p>
       </div>
     </div>
   </div>
@@ -209,7 +380,7 @@
         <div class="big-stat">53<small>weeks, 53 regional menus</small></div>
         <div>
           <p class="lead">Deb&rsquo;s master&rsquo;s thesis studied how French diners perceive and accept Indian food, starting with the pre-perception created by familiar curry-restaurant codes. He then ran fifty-three weeks of fifty-three different regional Indian menus and compared what diners made of the food afterwards.</p>
-          <p class="lead" style="margin-top:.9rem">A paturi wrapped in banana leaf could be read as tropical or island food. Butter chicken was instantly coded as Indian. That gap became the logic behind Deb&rsquo;s Bistro: broaden the understanding of Indian food without making the food less Indian.</p>
+          <p class="lead" style="margin-top:.9rem">A paturi wrapped in banana leaf could be read as tropical or island food. Butter chicken was instantly coded as Indian. That gap became the logic behind Deb&rsquo;s Bistro, the Indian restaurant in Lyon built to broaden the understanding of Indian food without making the food less Indian.</p>
           <div class="signboards"><a class="signboard alt" href="story.html">Read the full story</a></div>
         </div>
         <!-- LEDGER V4: Manan: "maybe we can add some image here rather than just keeping it empty." -->
@@ -257,7 +428,7 @@
     <div class="rv">
       <span class="k">Discovery or recognition</span>
       <h2 class="h2">For some guests, Deb&rsquo;s is a discovery of India.<br><span class="accent">For others, it is a taste they have been trying to find again.</span></h2>
-      <p class="lead">Lyonnais regulars. Indians living in France looking for regional food rather than a generic curry house. French guests who worked or travelled in India and miss one particular thing. And people bringing friends and family to show them something wider than they expected.</p>
+      <p class="lead">Lyonnais regulars. Indians living in France looking for real Indian food rather than a generic curry house. French guests who worked or travelled in India and miss one particular thing. And people bringing friends and family to show them something wider than they expected.</p>
     </div>
     <div class="rv">
       <img src="media/img/spread-overhead.jpg" alt="An overhead spread of regional Indian dishes on a table at Deb's Bistro" loading="lazy" width="1800" height="1350" style="border:3px solid var(--ink);box-shadow:8px 8px 0 var(--shadow)">
