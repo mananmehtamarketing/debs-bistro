@@ -143,8 +143,33 @@
         return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
       });
     };
-    fetch("assets/menu.json")
-      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    /* The menu is edited by the restaurant in the editor at admin.debsbistro.com,
+       which stores it in Supabase. We read that first and fall back to the file
+       in this repo if the network or the service is unavailable, so the menu page
+       can never end up empty. */
+    var SB_URL = "https://cpyjjydwpdonokdveeft.supabase.co/rest/v1/debs_site_content?key=eq.menu&select=data";
+    var SB_KEY = "sb_publishable_neJnfwF1A2LQJ7HP8OCnkQ_qE-8HXWr";
+    var fromEditor = function () {
+      var ctrl = ("AbortController" in window) ? new AbortController() : null;
+      var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 4000) : null;
+      return fetch(SB_URL, { headers: { apikey: SB_KEY }, signal: ctrl ? ctrl.signal : undefined })
+        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+        .then(function (rows) {
+          if (timer) clearTimeout(timer);
+          var d = rows && rows[0] && rows[0].data;
+          if (!d || !d.sections || !d.sections.length) throw new Error("empty payload");
+          return d;
+        });
+    };
+    var fromFile = function () {
+      return fetch("assets/menu.json")
+        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
+    };
+    fromEditor()
+      .catch(function (err) {
+        if (window.console) console.warn("menu editor unavailable, using bundled menu:", err);
+        return fromFile();
+      })
       .then(function (data) {
         var nav = document.getElementById("menu-jump");
         var navHtml = "", bodyHtml = "";
