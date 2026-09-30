@@ -4,6 +4,11 @@ Live at **https://www.debsbistro.com**. Built and maintained by MarketinCrew.
 
 ## How changes go live
 
+Day to day, the restaurant edits the menu itself at admin.debsbistro.com. That editor
+publishes to Supabase and the menu page reads it live, so menu text and prices do not
+go through this repository at all. What follows is for code changes.
+
+
 1. Make your change on a new branch (Claude or ChatGPT does this for you).
 2. Open a pull request. Vercel posts a **preview link** on the pull request within a minute or two.
 3. Open the preview link and check the page on your phone and laptop.
