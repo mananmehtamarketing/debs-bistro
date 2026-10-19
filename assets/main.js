@@ -9,7 +9,7 @@
     var close = document.createElement("button");
     close.className = "nav-close";
     close.textContent = "✕";
-    close.setAttribute("aria-label", "Close menu");
+    close.setAttribute("aria-label", document.documentElement.lang === "fr" ? "Fermer le menu" : "Close menu");
     links.appendChild(close);
     burger.addEventListener("click", function () { links.classList.add("open"); });
     close.addEventListener("click", function () { links.classList.remove("open"); });
@@ -161,8 +161,16 @@
           return d;
         });
     };
+    /* French pages read the same editor data, in French (every dish carries en + fr). */
+    var FR = document.documentElement.lang === "fr";
+    var t = function (o) { return (o && (FR ? (o.fr || o.en) : o.en)) || ""; };
+    var L = FR
+      ? { veg: "Végétarien", meat: "Contient viande ou poisson", neu: "Nouveau", al: "Allergènes : ",
+          lunch: "Portion du midi ", key: "Allergènes", fail: "La carte n'a pas pu s'afficher. Appelez-nous au " }
+      : { veg: "Vegetarian", meat: "Contains meat or fish", neu: "New", al: "Allergens: ",
+          lunch: "Lunch portion ", key: "Allergens", fail: "The menu could not be loaded. Please call us on " };
     var fromFile = function () {
-      return fetch("assets/menu.json")
+      return fetch("/assets/menu.json")
         .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
     };
     fromEditor()
@@ -174,44 +182,44 @@
         var nav = document.getElementById("menu-jump");
         var navHtml = "", bodyHtml = "";
         data.sections.forEach(function (sec) {
-          navHtml += '<a href="#' + esc(sec.id) + '">' + esc(sec.title.en) + "</a>";
+          navHtml += '<a href="#' + esc(sec.id) + '">' + esc(t(sec.title)) + "</a>";
           var items = sec.items.map(function (d) {
-            var dot = d.veg ? '<span class="veg-dot" title="Vegetarian"></span>'
-                            : '<span class="nonveg-dot" title="Contains meat or fish"></span>';
-            var neu = d.new ? '<span class="new-flag">New</span>' : "";
+            var dot = d.veg ? '<span class="veg-dot" title="' + L.veg + '"></span>'
+                            : '<span class="nonveg-dot" title="' + L.meat + '"></span>';
+            var neu = d.new ? '<span class="new-flag">' + L.neu + '</span>' : "";
             var tags = (d.tags || []).map(function (t) {
               return '<span class="tag-chip">' + esc(t) + "</span>";
             }).join("");
             var al = (d.allergens && d.allergens.length)
-              ? '<div class="al">Allergens: ' + d.allergens.map(esc).join(", ") + "</div>" : "";
+              ? '<div class="al">' + L.al + d.allergens.map(esc).join(", ") + "</div>" : "";
             var lunch = d.priceLunch
-              ? '<div class="al">Lunch portion ' + esc(d.priceLunch) + " &euro;</div>" : "";
+              ? '<div class="al">' + L.lunch + esc(d.priceLunch) + " &euro;</div>" : "";
             return '<div class="dish">'
               + '<div class="dish-line"><h3>' + dot + esc(d.name) + neu + "</h3>"
               + '<span class="dots"></span><span class="price">' + esc(d.price) + " &euro;</span></div>"
-              + "<p>" + esc(d.en) + "</p>"
+              + "<p>" + esc(FR ? (d.fr || d.en) : d.en) + "</p>"
               + (tags ? '<div class="tags">' + tags + "</div>" : "")
               + al + lunch + "</div>";
           }).join("");
           bodyHtml += '<section class="menu-section" id="' + esc(sec.id) + '">'
-            + '<div class="wrap"><div class="menu-title"><h2>' + esc(sec.title.en) + "</h2>"
+            + '<div class="wrap"><div class="menu-title"><h2>' + esc(t(sec.title)) + "</h2>"
             + (sec.script ? '<span class="script hindi" lang="hi">' + esc(sec.script) + "</span>" : "")
             + "</div>"
-            + (sec.note ? '<p class="menu-note">' + esc(sec.note.en) + "</p>" : "")
-            + (sec.chefNote ? '<p class="menu-note">&ldquo;' + esc(sec.chefNote.en) + '&rdquo; <b>Deb</b></p>' : "")
+            + (sec.note ? '<p class="menu-note">' + esc(t(sec.note)) + "</p>" : "")
+            + (sec.chefNote ? '<p class="menu-note">&ldquo;' + esc(t(sec.chefNote)) + '&rdquo; <b>Deb</b></p>' : "")
             + '<div class="dishes">' + items + "</div></div></section>";
         });
         if (nav) nav.innerHTML = navHtml;
         var keys = Object.keys(data.allergenKey).map(function (k) {
-          return "<b>" + esc(k) + "</b> " + esc(data.allergenKey[k].en);
+          return "<b>" + esc(k) + "</b> " + esc(t(data.allergenKey[k]));
         }).join(" &middot; ");
-        bodyHtml += '<div class="wrap"><div class="glossary"><b>Allergens</b><br>' + keys
-          + "<br><br>" + esc(data.meatOrigin.en) + "</div></div>";
+        bodyHtml += '<div class="wrap"><div class="glossary"><b>' + L.key + '</b><br>' + keys
+          + "<br><br>" + esc(t(data.meatOrigin)) + "</div></div>";
         menuRoot.innerHTML = bodyHtml;
       })
       .catch(function (err) {
-        menuRoot.innerHTML = '<div class="wrap menu-fallback"><p class="lead">The menu could not be loaded. '
-          + 'Please call us on <a href="tel:+33472714911">+33 4 72 71 49 11</a>.</p></div>';
+        menuRoot.innerHTML = '<div class="wrap menu-fallback"><p class="lead">' + L.fail
+          + '<a href="tel:+33472714911">+33 4 72 71 49 11</a>.</p></div>';
         if (window.console) console.error("menu.json failed:", err);
       });
   }
@@ -233,15 +241,21 @@
       }).then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         msg.className = "form-msg ok show";
-        msg.textContent = "Thank you. Deb's team has received your event brief and will come back to you directly.";
+        msg.textContent = document.documentElement.lang === "fr"
+          ? "Merci. L'équipe de Deb a bien reçu votre demande et revient vers vous directement."
+          : "Thank you. Deb's team has received your event brief and will come back to you directly.";
         ef.reset();
       }).catch(function () {
         /* LEDGER F20: the endpoint intentionally returns 501 until a recipient inbox exists.
            It must never report success while nothing is delivered. */
         msg.className = "form-msg err show";
-        msg.innerHTML = "This form is not connected yet. Please email "
-          + '<a href="mailto:contact@debsbistro.fr">contact@debsbistro.fr</a> or call '
-          + '<a href="tel:+33472714911">+33 4 72 71 49 11</a> and we will come straight back to you.';
+        msg.innerHTML = document.documentElement.lang === "fr"
+          ? "Le formulaire n'a pas pu partir. Écrivez-nous à "
+            + '<a href="mailto:contact@debsbistro.fr">contact@debsbistro.fr</a> ou appelez le '
+            + '<a href="tel:+33472714911">+33 4 72 71 49 11</a>, nous revenons vers vous tout de suite.'
+          : "This form is not connected yet. Please email "
+            + '<a href="mailto:contact@debsbistro.fr">contact@debsbistro.fr</a> or call '
+            + '<a href="tel:+33472714911">+33 4 72 71 49 11</a> and we will come straight back to you.';
       }).then(function () { btn.disabled = false; });
     });
   }

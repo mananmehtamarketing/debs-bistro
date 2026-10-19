@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD2R2B5R3F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-JD2R2B5R3F");</script>
-<!-- LEDGER A15/M1: FRENCH PAGES ARE OUT OF SCOPE FOR GATE 1. The brief requires the
-     French site to be written from a separate French execution document, adapted for a
-     French reader rather than translated from the English. That document has not been
-     supplied. Only three things were changed here in this pass:
-       1. noindex added (LEDGER J1, staging posture)
-       2. the discontinued Deb's Table product removed (LEDGER A8, delete list is absolute)
-       3. the Deb's Street Food link repointed to Gully (LEDGER A14)
-     Everything else is untouched, pending the French document. -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deb's Bistro · Bistro Indien à Lyon | L'Inde des régions, rapportée de voyage</title>
-<meta name="description" content="Deb's Bistro, 26 Rue Lortet, Lyon 7e. Une cuisine indienne du terrain, rapportée des voyages du Chef Deb à travers l'Inde. Dabbas du midi, carte de saison, brunch du samedi, cocktails épicés.">
-<meta property="og:title" content="Deb's Bistro · Bistro Indien à Lyon">
-<meta property="og:description" content="Une maison, un livre, une porte ouverte sur l'Inde. Cuisine indienne des régions, Lyon 7e, depuis 2019.">
-<meta property="og:type" content="restaurant">
-<meta property="og:image" content="../media/img/interior-dining-room.jpg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deb's Bistro Lyon | Restaurant indien régional &amp; traiteur</title>
+<meta name="description" content="Une cuisine indienne régionale, étudiée à travers l'Inde et servie à Lyon. Dabbas du midi, dîners à partager, Thali du samedi et traiteur par le chef Debdutta Gupta.">
+<!-- LEDGER J1: staging only. While this build lives on *.vercel.app it must stay out of the
+     index so it cannot compete with the client's own domain. Remove noindex AND the
+     disallow-all robots.txt at domain cutover, not before. -->
 <link rel="canonical" href="https://www.debsbistro.com/fr">
 <link rel="alternate" hreflang="en" href="https://www.debsbistro.com/">
 <link rel="alternate" hreflang="fr" href="https://www.debsbistro.com/fr">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Deb's Bistro Lyon | Restaurant indien régional &amp; traiteur">
+<meta property="og:description" content="Une cuisine indienne régionale, étudiée à travers l'Inde et servie à Lyon. Dabbas du midi, dîners à partager, Thali du samedi et traiteur par le chef Debdutta Gupta.">
+<meta property="og:image" content="https://www.debsbistro.com/media/img/interior-warm-dining.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Oswald:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Noto+Serif+Bengali:wght@500&family=Noto+Serif+Tamil:wght@500&display=swap" rel="stylesheet">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Oswald:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css?v=e8e7b905">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Deb's Bistro",
-  "servesCuisine": "Indienne",
-  "priceRange": "€€",
-  "foundingDate": "2019",
+  "servesCuisine": "Indienne régionale",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "26 Rue Lortet",
+    "addressLocality": "Lyon",
+    "postalCode": "69007",
+    "addressCountry": "FR"
+  },
   "telephone": "+33472714911",
-  "address": {"@type": "PostalAddress","streetAddress": "26 Rue Lortet","postalCode": "69007","addressLocality": "Lyon","addressCountry": "FR"},
-  "geo": {"@type": "GeoCoordinates","latitude": 45.7423042,"longitude": 4.8405682},
-  "url": "https://www.debsbistro.com",
-  "sameAs": ["https://www.instagram.com/debs_bistro/","https://www.facebook.com/Debsbistroindien/"],
+  "url": "https://www.debsbistro.com/fr",
+  "acceptsReservations": "https://debsbistro.fr/fr/booking",
+  "hasMenu": "https://www.debsbistro.com/fr/menu",
+  "image": "https://www.debsbistro.com/media/img/interior-warm-dining.jpg",
+  "hasMap": "https://maps.app.goo.gl/EC8REt6pLVeC2N6W8",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "686"
+  },
   "openingHoursSpecification": [
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"12:00","closes":"14:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"18:00","closes":"23:00"}
-  ],
-  "acceptsReservations": "https://debsbistro.fr/fr/booking"
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "12:00", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "19:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "19:00", "closes": "23:00" }
+  ]
 }
 </script>
+<!-- LEDGER V17/J4: hours and rating supplied by Manan from the Google Business Profile,
+     21 Aug 2026. aggregateRating mirrors the profile exactly: 4.5 from 686 reviews.
+     Sunday is omitted from the spec, which is how schema.org expresses closed. -->
 </head>
 <body>
-<a class="skip" href="#main">Aller au contenu</a>
 <div class="grain" aria-hidden="true"></div>
-
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    <b>DEB'S BISTRO · LYON 7e</b> &nbsp;✦&nbsp; Cuisine indienne du terrain, rapportée de voyage &nbsp;✦&nbsp; Dabbas du midi, du mardi au samedi &nbsp;✦&nbsp; Brunch-thali le samedi &nbsp;✦&nbsp; Cocktails épicés à l'indienne &nbsp;✦&nbsp; 26 Rue Lortet, Lyon &nbsp;✦&nbsp;
-  </div>
-</div>
-
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="ticker"><div class="ticker-track"><span>&nbsp;Cuisine indienne régionale, étudiée à travers l&rsquo;Inde et cuisinée à Lyon&nbsp; &middot; &nbsp;<b>26 Rue Lortet, 69007 Lyon</b>&nbsp; &middot; &nbsp;Le Thali du samedi, chaque samedi midi&nbsp; &middot; &nbsp;Épicé, pas forcément piquant&nbsp; &middot; &nbsp;</span></div></div>
 <nav class="nav">
   <div class="wrap nav-in">
     <a class="brand" href="index.html">
-      <span class="brand-name">Deb's <span>Bistro</span></span>
-      <span class="brand-sub">Bistro Indien · Lyon</span>
+      <span class="brand-name">Deb<span>&rsquo;</span>s Bistro</span>
+      <span class="brand-sub">Lyon 7<sup>e</sup> &middot; depuis 2019</span>
     </a>
-    <button class="burger" aria-label="Ouvrir le menu">Menu</button>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
     <div class="nav-links">
-      <a href="histoire.html">Notre Histoire</a>
-      <a href="menu.html">La Carte</a>
-      <a href="#reels">Reels</a>
-      <a href="#brunch">Brunch</a>
-      <a href="#visit">Venir</a>
-      <a class="lang-pill" href="../index.html" lang="en" title="English version">EN</a>
-      <a class="btn btn-book btn-book-nav" href="https://debsbistro.fr/fr/booking">Réserver</a>
+      <a href="histoire.html">Histoire</a>
+      <a href="menu.html">La carte</a>
+      <a href="traiteur-evenements.html">Traiteur &amp; événements</a>
+      <a href="thali-du-samedi.html">Thali du samedi</a>
+      <a href="venir.html">Venir</a>
+      <a class="lang-pill" href="../index.html" hreflang="en" lang="en">EN</a>
+      <a class="btn btn-book nav-reserve" href="https://debsbistro.fr/fr/booking">Réserver</a>
     </div>
   </div>
 </nav>
-
-<main id="main">
-
-<!-- ============ HERO ============ -->
 <header class="hero">
-  <video autoplay muted loop playsinline poster="../media/poster/hero-dosa.jpg" data-ambient>
-    <source src="../media/video/hero-dosa.mp4" type="video/mp4">
-  </video>
-  <div class="burst" aria-hidden="true">Depuis<br>2019<br>·<br>Lyon 7e</div>
+  <!-- LEDGER A1/C2/C4: current hero video kept per the brief. Poster is a warm interior
+       PHOTOGRAPH, not a frame from this video, because the clip contains no interior frame.
+       Deviation flagged to Deb. -->
+  <video autoplay muted loop playsinline preload="none"
+         poster="../media/img/interior-warm-dining.jpg"
+         data-src="../media/video/hero-dosa.mp4"
+         aria-label="La cuisine et la salle de Deb's Bistro"></video>
+  <div class="burst" aria-hidden="true">Depuis<br>2019<br>&middot;<br>Lyon 7e</div>
   <div class="hero-in">
-    <span class="hero-kicker">Bistro Indien · 26 Rue Lortet</span>
-    <h1>Deb's Bistro</h1>
-    <span class="hero-hindi hindi" lang="hi">भारत की रसोई, ल्यों की मेज़ पर</span>
-    <p class="hero-tag">Les cuisines régionales de l'Inde, apprises sur la route plat par plat, puis servies à une table de bistro à Lyon. Entrez. Goûtez. Lisez l'Inde comme un livre.</p>
+    <h1>Deb&rsquo;s Bistro</h1>
+    <p class="hero-tag">Une cuisine indienne régionale, étudiée à travers l&rsquo;Inde et cuisinée à Lyon.</p>
     <div class="hero-ctas">
       <a class="btn btn-solid" href="https://debsbistro.fr/fr/booking">Réserver une table</a>
       <a class="btn btn-ghost" href="menu.html">Voir la carte</a>
@@ -100,291 +100,325 @@
   </div>
 </header>
 
-<!-- ============ INTRO ============ -->
-<section id="maison">
-  <div class="wrap split">
-    <div class="rv">
-      <span class="k">Une maison, un livre, une porte ouverte</span>
-      <h2 class="h2">Ce n'est pas un restaurant indien.<br><span class="accent">C'est un voyage avec une table.</span></h2>
-      <p class="quote-book">« Deb's est une maison, un lieu plein d'histoires. C'est un livre. Une porte ouverte dans laquelle on entre, goûte et lit l'Inde. »</p>
-      <div class="rule"></div>
-      <p class="lead">Chaque assiette vient d'un endroit précis : un coin de rue du vieux Delhi, une ville-temple du Karnataka, une boutique de biryani centenaire à Lucknow, une côte de pêcheurs à Mangalore. Chaque année, le Chef Deb traverse l'Inde, apprend le plat là où il est né, puis le ramène à Lyon et le dresse avec le soin français.</p>
-      <div class="signboards">
-        <a class="signboard alt" href="histoire.html">Le voyage du chef</a>
-        <a class="signboard" href="menu.html">Ouvrir la carte</a>
-      </div>
-    </div>
-    <div class="cluster rv">
-      <figure class="stamp c1"><img src="../media/img/chef-portrait.jpg" alt="Le Chef Deb au bistro, bras croisés devant le mur d'affiches" loading="lazy"><figcaption>Chef Debdutta Gupta</figcaption></figure>
-      <figure class="stamp c2"><img src="../media/img/interior-don-poster.jpg" alt="Affiche Bollywood vintage sur le mur du bistro" loading="lazy"><figcaption>Le mur de Bombay</figcaption></figure>
-      <figure class="stamp c3"><img src="../media/img/gallery-thali.jpg" alt="Un thali complet servi chez Deb's Bistro" loading="lazy"><figcaption>Le thali</figcaption></figure>
+<main id="main">
+
+<section id="why">
+  <div class="wrap">
+    <span class="k">Ce qui rend Deb&rsquo;s différent</span>
+    <h2 class="h2 intro-narrow">Nous ne partons pas d&rsquo;une seule base de curry<br><span class="accent">pour en tirer dix plats.</span></h2>
+    <p class="lead">Un plat n&rsquo;entre chez Deb&rsquo;s qu&rsquo;une fois que nous savons quel goût il doit avoir là d&rsquo;où il vient. Nous voyageons, goûtons, étudions, trouvons les bons ingrédients et reproduisons cette référence à Lyon, sans aucun raccourci.</p>
+    <div class="proof-grid">
+      <div class="proof-card rv"><span class="proof-num">01</span><h3>Goûter la référence</h3><p>Le Vieux Delhi pour le butter chicken. Mangalore pour le curry de poisson. Le lieu d&rsquo;origine sert de point de repère.</p></div>
+      <div class="proof-card rv"><span class="proof-num">02</span><h3>Prendre le temps</h3><p>Mélanges d&rsquo;épices maison, fournisseurs spécialisés, cuisson par couches, cuisson lente et les bons ustensiles.</p></div>
+      <div class="proof-card rv"><span class="proof-num">03</span><h3>Épicé, pas seulement piquant</h3><p>Le goût vient de la cardamome, du macis, de la muscade et d&rsquo;épices ajoutées couche après couche. Le piquant du piment s&rsquo;ajoute à part, à table.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ CARTE DE SAISON ============ -->
-<section class="teal-block plaster" id="saison">
+<section class="teal-block plaster" id="ways">
   <div class="wrap">
-    <div class="center rv">
-      <span class="k">La carte de saison</span>
-      <h2 class="h2">Comme des boîtes d'allumettes,<br>craquées à table</h2>
-      <p class="lead">La carte change avec les saisons et avec les voyages du chef. Chaque plat porte le nom de sa ville, dans son écriture d'origine, comme une boîte d'allumettes rapportée dans une valise.</p>
-    </div>
-    <div class="match-grid">
-      <article class="matchbox rv">
-        <div class="match-band"><span class="rosette rl">✦</span><span class="rosette rr">✦</span>
-          <h3>Kashmiri Goshtaba Korma</h3><span class="script" lang="hi">कश्मीर</span>
+    <span class="k">Trois façons de manger chez Deb&rsquo;s</span>
+    <h2 class="h2">Le midi, le soir,<br><span style="color:var(--mustard-soft)">et le samedi.</span></h2>
+    <div class="ways">
+      <article class="way rv">
+        <img src="../media/img/dabba-kashmiri.jpg" alt="Un plateau dabba du midi de Deb's Bistro avec riz, curry, raita et slaw" loading="lazy" width="1200" height="900">
+        <div class="way-body">
+          <span class="way-kicker">Midi</span><h3>Dabbas &amp; Indi Bowls</h3>
+          <p>Des Dabbas inspirés chacun d&rsquo;une ville et des Indi Bowls mi-chauds, mi-froids, pensés pour une journée de travail&nbsp;: une cuisine indienne complète et équilibrée, sans le coup de barre de l&rsquo;après-midi. L&rsquo;offre du midi est aussi celle de la vente à emporter et de la livraison.</p>
+          <a class="signboard" href="menu.html#lunch-dabbas">Voir la carte du midi</a>
         </div>
-        <div class="match-img"><img src="../media/img/dish-kashmiri-goshtaba.jpg" alt="Kashmiri Goshtaba Korma" loading="lazy"></div>
-        <p class="match-body">Des koftas de bœuf d'une finesse incroyable dans une sauce yakhni légère, au fenouil et à la cardamome noire. Le genre de plat qu'on imagine servi dans une maison kashmirie, entre souvenirs et longues conversations.</p>
-        <div class="match-foot"><span>Origine · Cachemire</span><span class="price">Saison</span></div>
       </article>
-      <article class="matchbox rv">
-        <div class="match-band"><span class="rosette rl">✦</span><span class="rosette rr">✦</span>
-          <h3>Bengali Kathal Kofta Malai</h3><span class="script" lang="bn" style="font-family:'Noto Serif Bengali',serif">কলকাতা</span>
+      <article class="way rv">
+        <img src="../media/img/gallery-table-spread.jpg" alt="Une table partagée de plats indiens régionaux chez Deb's Bistro" loading="lazy" width="1200" height="900">
+        <div class="way-body">
+          <span class="way-kicker">Soir</span><h3>La table à partager</h3>
+          <p>Une carte plus large pour les amis, les familles et les groupes. Commandez d&rsquo;une région à l&rsquo;autre, partagez les plats, ajoutez des cocktails ou une bière et prenez votre temps. L&rsquo;ambiance est détendue, généreuse, celle d&rsquo;un bistro.</p>
+          <a class="signboard alt" href="menu.html#starters">Voir la carte du soir</a>
         </div>
-        <div class="match-img"><img src="../media/img/dish-bengali-kathal-kofta.jpg" alt="Kofta de jacquier bengali, sauce malai" loading="lazy"></div>
-        <p class="match-body">Des koftas de jacquier fondants dans une sauce malai soyeuse, d'après une recette transmise de génération en génération entre le Bengale et la Malaisie. Végétarien, et profondément aimé.</p>
-        <div class="match-foot"><span>Origine · Kolkata</span><span class="price">Saison</span></div>
       </article>
-      <article class="matchbox rv">
-        <div class="match-band"><span class="rosette rl">✦</span><span class="rosette rr">✦</span>
-          <h3>Old Delhi Tandoori Tikka</h3><span class="script" lang="hi">पुरानी दिल्ली</span>
+      <article class="way rv">
+        <img src="../media/img/gallery-brunch-thali.jpg" alt="Un thali indien salé servi le samedi midi" loading="lazy" width="1079" height="1349">
+        <div class="way-body">
+          <span class="way-kicker">Samedi</span><h3>Le brunch thali</h3>
+          <p>Chaque samedi midi, un thali indien salé qui change d&rsquo;une semaine à l&rsquo;autre. Le thali du moment est annoncé sur Instagram.</p>
+          <a class="signboard teal" href="thali-du-samedi.html">Voir le Thali de ce samedi</a>
         </div>
-        <div class="match-img"><img src="../media/img/dish-old-delhi-tikka.jpg" alt="Tandoori chicken tikka du vieux Delhi" loading="lazy"></div>
-        <p class="match-body">Le feu du tandoor, des épices longuement marinées, la fumée des grills emblématiques du vieux Delhi. Saisi au moment juste, servi sans compromis.</p>
-        <div class="match-foot"><span>Origine · Delhi</span><span class="price">Saison</span></div>
-      </article>
-      <article class="matchbox rv">
-        <div class="match-band"><span class="rosette rl">✦</span><span class="rosette rr">✦</span>
-          <h3>Chennai Paper Roast Dosa</h3><span class="script" lang="ta" style="font-family:'Noto Serif Tamil',serif">சென்னை</span>
-        </div>
-        <div class="match-img"><img src="../media/img/dish-chennai-paper-roast.jpg" alt="Paper roast masala dosa de Chennai" loading="lazy"></div>
-        <p class="match-body">Le plat le plus proche du cœur du chef, son quotidien d'écolier dans le Sud. Crêpe croustillante de riz et lentilles, masala de pommes de terre, sambar et chutney de coco.</p>
-        <div class="match-foot"><span>Origine · Chennai</span><span class="price">18.00€</span></div>
-      </article>
-      <article class="matchbox rv">
-        <div class="match-band"><span class="rosette rl">✦</span><span class="rosette rr">✦</span>
-          <h3>Kerala Gambas &amp; Pineapple Puli</h3><span class="script" lang="hi">केरल</span>
-        </div>
-        <div class="match-img"><img src="../media/img/dish-kerala-gambas.jpg" alt="Gambas du Kerala, pulissery à l'ananas" loading="lazy"></div>
-        <p class="match-body">Gambas et ananas dans un pulissery à la noix de coco, l'équilibre sucré-acide-épicé des backwaters. Une carte postale de la côte de Malabar, écrite en épices.</p>
-        <div class="match-foot"><span>Origine · Kerala</span><span class="price">Saison</span></div>
-      </article>
-      <article class="matchbox rv">
-        <div class="match-band"><span class="rosette rl">✦</span><span class="rosette rr">✦</span>
-          <h3>Lucknow Seekh Kebab Végétal</h3><span class="script" lang="hi">लखनऊ</span>
-        </div>
-        <div class="match-img"><img src="../media/img/dish-lucknow-seekh.jpg" alt="Seekh kebab végétal façon Lucknow" loading="lazy"></div>
-        <p class="match-body">Inspiré des célèbres seekh kebabs de Lucknow, en version végétale : des épices délicatement équilibrées, une texture fondante, un grill plein de caractère.</p>
-        <div class="match-foot"><span>Origine · Lucknow</span><span class="price">Saison</span></div>
       </article>
     </div>
-    <div class="center" style="margin-top:3rem">
-      <a class="btn btn-solid" href="menu.html">La carte complète, avec les prix</a>
-    </div>
+    <p class="lead" style="margin-top:2.4rem"><b style="color:var(--mustard-soft)">À emporter &amp; livraison.</b> Les Dabbas du midi et les Indi Bowls forment l&rsquo;offre à emporter et en livraison. <a href="https://usellweb.co/shops/debs-bistro" style="color:var(--cream)" rel="noopener">Commander en ligne</a>.</p>
   </div>
 </section>
 
-<!-- ============ LE DABBA ============ -->
-<section id="dabba">
+<section id="dishes">
   <div class="wrap">
-    <div class="split">
-      <div class="rv">
-        <span class="k">Le rituel du midi · mardi au samedi</span>
-        <h2 class="h2">Ouvrez le dabba.<br><span class="accent">Bombay fait le reste.</span></h2>
-        <p class="lead">Le midi, Deb's tourne comme une cantine de tiffins à Bombay. Un dabba en inox arrive sur votre table : riz pilaf, curry du jour, raita et slaw maison. Soulevez le couvercle, respirez, commencez. À partir de 12.50€, et reparti en moins d'une heure si Lyon vous attend.</p>
-        <div class="signboards">
-          <a class="signboard" href="menu.html#dabba">Les dabbas de la semaine</a>
-          <a class="signboard alt" href="https://usellweb.co/shops/debs-bistro">Commander à emporter</a>
-        </div>
+    <span class="k">La preuve par l&rsquo;assiette</span>
+    <h2 class="h2">Trois plats,<br><span class="accent">et pourquoi ils ont ce goût-là.</span></h2>
+
+    <div class="proofdish rv">
+      <div class="pd-media"><!-- LEDGER V2/C28: DONE, photo supplied by Deb 21 Aug 2026 --><img src="../media/img/dish-dum-biryani.jpg" alt="Un dum biryani servi sans être mélangé, le riz visiblement en couches avec birista, coriandre et citron vert" loading="lazy"></div>
+      <div>
+        <span class="pd-city">Dum Biryani</span>
+        <h3>Le riz n&rsquo;est pas censé être identique d&rsquo;un bout à l&rsquo;autre.</h3>
+        <p>Un biryani se monte en couches et finit sa cuisson en dum&nbsp;: scellé, il cuit lentement dans sa propre vapeur. Chaque grain porte plus ou moins d&rsquo;arôme, d&rsquo;épices et de couleur, et c&rsquo;est justement cette irrégularité qui compte. Si tous les grains se ressemblent, on a mélangé ce qui n&rsquo;aurait pas dû l&rsquo;être.</p>
       </div>
-      <div class="dabba-strip rv">
-        <figure class="stamp"><img src="../media/img/dabba-kashmiri.jpg" alt="Dabba Kashmiri Goshtaba" loading="lazy"><figcaption>Dabba kashmiri</figcaption></figure>
-        <figure class="stamp"><img src="../media/img/dabba-bengali.jpg" alt="Dabba bengali au kathal kofta" loading="lazy"><figcaption>Dabba bengali</figcaption></figure>
-        <figure class="stamp"><img src="../media/img/dabba-mangalore.jpg" alt="Dabba curry de poisson de Mangalore" loading="lazy"><figcaption>Dabba de Mangalore</figcaption></figure>
+    </div>
+
+    <div class="proofdish rv">
+      <div class="pd-media"><img src="../media/img/gallery-butter-chicken.jpg" alt="Un butter chicken en cours de dressage chez Deb's Bistro" loading="lazy" width="1600" height="2404"></div>
+      <div>
+        <span class="pd-city">Old Delhi Butter Chicken</span>
+        <h3>L&rsquo;objectif, c&rsquo;est un équilibre qui existe dans le Vieux Delhi.</h3>
+        <p>Pas un butter chicken de restaurant standard, décliné d&rsquo;une sauce mère. La référence, c&rsquo;est la version cuisinée là où le plat est né, et tout le travail consiste à retrouver ici les mêmes proportions de tomate, de fenugrec, de fumé et de beurre que là-bas.</p>
+      </div>
+    </div>
+
+    <div class="proofdish rv">
+      <div class="pd-media"><!-- LEDGER V2/C30: DONE, photo supplied by Deb 21 Aug 2026 --><img src="../media/img/dish-mangalore-fish-curry.jpg" alt="Curry de poisson de Mangalore dans une poêle posée sur une feuille de bananier" loading="lazy"></div>
+      <div>
+        <span class="pd-city">Mangalore Fish Curry</span>
+        <h3>Il faut l&rsquo;avoir mangé à Mangalore pour pouvoir le cuisiner à Lyon.</h3>
+        <p>Mangue fraîche, lait de coco, feuilles de curry et un mélange d&rsquo;épices de Mangalore, tenus dans un équilibre propre à la région plutôt que générique. L&rsquo;approvisionnement compte autant que la méthode, et le seul moyen de connaître le goût à atteindre, c&rsquo;est de l&rsquo;avoir goûté sur la côte.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ REELS ============ -->
-<section class="teal-block plaster" id="reels" style="padding-bottom:3.4rem">
+<section class="teal-block plaster" id="how-we-cook">
   <div class="wrap">
-    <div class="rv">
-      <span class="k">Tout droit de la cuisine</span>
-      <h2 class="h2">Le bistro, en mouvement</h2>
-      <p class="reels-note">▶ &nbsp;Touchez un reel pour le lancer avec le son. Faites défiler pour en voir plus.</p>
+    <span class="k">Notre façon de cuisiner</span>
+    <h2 class="h2">Aucun raccourci,<br><span style="color:var(--mustard-soft)">parce que c&rsquo;est là que tout se joue.</span></h2>
+    <div class="cook-grid">
+      <div class="cook-card rv"><h4>Des fournisseurs spécialisés</h4><p>Six à huit fournisseurs spécialisés, choisis ingrédient par ingrédient, pas pour simplifier la facture.</p></div>
+      <div class="cook-card rv"><h4>Des mélanges d&rsquo;épices maison</h4><p>Les masalas sont composés ici, pas achetés tout faits. Chaque plat a son propre mélange, pas une base commune.</p></div>
+      <div class="cook-card rv"><h4>Par couches, lentement</h4><p>Cuisson par couches et longues cuissons lentes partout où le plat l&rsquo;exige. Le nihari et le biryani ne sont pas de la restauration rapide.</p></div>
+      <div class="cook-card rv"><h4>Les bons ustensiles</h4><p>Des handis et des lagans rapportés de Chawri Bazaar, à Delhi. La façon dont ils gardent et diffusent la chaleur fait partie du résultat.</p></div>
     </div>
-  </div>
-  <div class="wrap">
-    <div class="reel-rail rv">
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/hero-dosa.jpg" src="../media/video/hero-dosa.mp4"></video><span class="tag">Dosa, à la minute</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-kebab.jpg" src="../media/video/reel-kebab.mp4"></video><span class="tag">Sortie du tandoor</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-naan.jpg" src="../media/video/reel-naan.mp4"></video><span class="tag">Naan, à la main</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-thali.jpg" src="../media/video/reel-thali.mp4"></video><span class="tag">Le thali</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-dabba-boxes.jpg" src="../media/video/reel-dabba-boxes.mp4"></video><span class="tag">Dabbas, prêts</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-burrata.jpg" src="../media/video/reel-burrata.mp4"></video><span class="tag">Korma de burrata</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-dosa-table.jpg" src="../media/video/reel-dosa-table.mp4"></video><span class="tag">À table</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-pork.jpg" src="../media/video/reel-pork.mp4"></video><span class="tag">Carte d'hiver</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-single-1.jpg" src="../media/video/reel-single-1.mp4"></video><span class="tag">Au passe</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-single-2.jpg" src="../media/video/reel-single-2.mp4"></video><span class="tag">Les grills maison</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-single-3.jpg" src="../media/video/reel-single-3.mp4"></video><span class="tag">Le détail compte</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel"><video preload="none" playsinline poster="../media/poster/reel-ambience.jpg" src="../media/video/reel-ambience.mp4"></video><span class="tag">Les soirs chez Deb's</span><div class="playhint"><span>▶</span></div></div>
+    <div class="cook-media">
+      <img src="../media/img/gallery-nihari.jpg" alt="Un nihari entouré des épices entières de son mélange maison" loading="lazy" width="1080" height="1080">
+      <!-- LEDGER V3: swapped out cook-deb-at-the-pot.jpg. Manan: "this image does not look really nice." -->
+      <img src="../media/img/chef-tandoor-skewer.jpg" alt="Le chef Deb sortant une brochette du tandoor" loading="lazy">
     </div>
+    <p class="lead" style="margin-top:2.2rem"><b style="color:var(--mustard-soft)">Épicé, pas forcément piquant.</b> Nous avons la main légère sur le piment. Des achars au piment, plus ou moins forts, attendent sur la table&nbsp;: vous relevez à votre goût sans toucher au plat.</p>
   </div>
 </section>
 
-<!-- ============ VOYAGE ============ -->
-<section class="journey" id="voyage">
-  <div class="wrap split">
-    <div class="cluster rv">
-      <figure class="stamp c1"><img src="../media/img/chef-tandoor-skewer.jpg" alt="Le Chef Deb et sa brochette au tandoor" loading="lazy"><figcaption>Au tandoor</figcaption></figure>
-      <figure class="stamp c2"><img src="../media/img/event-festival.jpg" alt="L'équipe de Deb's en service lors d'un festival" loading="lazy"><figcaption>Sur la route</figcaption></figure>
-      <figure class="stamp c3"><img src="../media/img/chef-magazine.jpg" alt="Le Chef Deb dans la presse française" loading="lazy"><figcaption>Dans la presse</figcaption></figure>
-    </div>
-    <div class="rv">
-      <span class="k">Des gullies de l'Inde à Lyon 7e</span>
-      <h2 class="h2">Un chef.<br><span class="accent">Vingt-huit cuisines de l'Inde.</span></h2>
-      <p class="lead">MasterChef India l'a mis face aux caméras. L'Institut Paul Bocuse l'a amené à Lyon. Mais ce sont les voyages annuels à travers l'Inde, à manger chez les fermiers, les cuisinières de famille et les vendeurs de rue, qui ont écrit cette carte. Chaque année le chef repart, et chaque année la carte revient plus riche.</p>
-      <div class="city-line">
-        <span class="city-chip">Bombay <small lang="hi">मुंबई</small></span>
-        <span class="city-chip">Kolkata <small lang="bn" style="font-family:'Noto Serif Bengali',serif">কলকাতা</small></span>
-        <span class="city-chip">Chennai <small lang="ta" style="font-family:'Noto Serif Tamil',serif">சென்னை</small></span>
-        <span class="city-chip">Lucknow <small lang="hi">लखनऊ</small></span>
-        <span class="city-chip">Cachemire <small lang="hi">कश्मीर</small></span>
-        <span class="city-chip">Kerala <small lang="hi">केरल</small></span>
-      </div>
-      <div class="signboards">
-        <a class="signboard alt" href="histoire.html">Lire toute l'histoire</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ THALI DU SAMEDI ============ -->
-<section class="teal-block plaster" id="brunch">
+<section id="research">
   <div class="wrap">
-    <div class="center rv">
-      <span class="k">Deux rituels qui valent le détour</span>
-      <h2 class="h2">Le Thali du samedi</h2>
-    </div>
-    <div class="duo" style="grid-template-columns:1fr;max-width:620px">
-      <a class="poster-card rv" href="menu.html#brunch">
-        <img src="../media/img/gallery-brunch-thali.jpg" alt="Brunch-thali du week-end chez Deb's Bistro" loading="lazy">
+    <span class="k">Avant d&rsquo;être un restaurant</span>
+    <h2 class="h2">C&rsquo;était une question de recherche.</h2>
+    <div class="research">
+      <div class="research-split">
+        <div class="big-stat">53<small>semaines, 53 menus régionaux</small></div>
         <div>
-          <h3>Le Brunch-Thali</h3>
-          <p>Chaque week-end. Une entrée du jour, un mini masala dosa, un daal, un plat végé ou viande, un dessert et le riz pilaf, le tout sur un grand plateau. Comme on mange vraiment en Inde, un samedi sans montre.</p>
-          <span class="pricetag">Week-end · 24.99€</span>
+          <p class="lead">Le mémoire de master de Deb portait sur la façon dont les convives français perçoivent et acceptent la cuisine indienne, à commencer par l&rsquo;idée qu&rsquo;ils s&rsquo;en font d&rsquo;avance à travers les codes familiers des restaurants de curry. Il a ensuite proposé, cinquante-trois semaines durant, cinquante-trois menus indiens régionaux différents, et comparé ce que les convives en retenaient.</p>
+          <p class="lead" style="margin-top:.9rem">Un paturi enveloppé dans une feuille de bananier pouvait passer pour une cuisine tropicale ou des îles. Le butter chicken, lui, était aussitôt identifié comme indien. Cet écart est devenu la logique de Deb&rsquo;s Bistro&nbsp;: élargir la compréhension de la cuisine indienne sans la rendre moins indienne.</p>
+          <div class="signboards"><a class="signboard alt" href="histoire.html">Lire toute l&rsquo;histoire</a></div>
         </div>
-      </a>
-      <!-- LEDGER A8: Deb's Table card removed, product discontinued. -->
+        <!-- LEDGER V4: Manan: "maybe we can add some image here rather than just keeping it empty." -->
+        <div class="research-media"><img src="../media/img/story-deb-kitchen.jpg" alt="Le chef Deb au travail dans la cuisine de Deb's Bistro" loading="lazy"></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ TÉMOIGNAGES ============ -->
-<section id="voix">
+<section class="teal-block plaster" id="food-trails">
   <div class="wrap">
-    <div class="center rv">
-      <span class="k">Le bouche à oreille, littéralement</span>
-      <h2 class="h2">Ce que dit la table</h2>
+    <span class="k">Les Food Trails de Deb</span>
+    <!-- LEDGER V5: quote moved left, clips right. Manan: "this empty spacing on the left I don't like." -->
+    <div class="trails-split">
+      <div class="pullquote">
+        <p>&laquo;&nbsp;Une recette peut vous dire comment cuisiner un plat. Elle ne peut pas vous dire quel goût il doit avoir.&nbsp;&raquo;</p>
+        <cite>Chef Debdutta Gupta</cite>
+      </div>
+      <div>
+    <!-- LEDGER A6/C15/G4: DONE 21 Aug 2026. Real fieldwork footage supplied by Deb.
+         Phone-shot, vertical, unpolished, which is what the brief asks for. No stock. -->
+      <div class="trail-rail">
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-banana-leaf-service.jpg" src="../media/trails/trail-banana-leaf-service.mp4" aria-label="Le riz servi sur la feuille. Recherche de terrain, déc. 2024."></video><span class="tag">Le riz servi sur la feuille<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-roadside-kitchen.jpg" src="../media/trails/trail-roadside-kitchen.mp4" aria-label="Une cuisine de bord de route, en plein service. Recherche de terrain, déc. 2024."></video><span class="tag">Une cuisine de bord de route, en plein service<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-sweet-kadai.jpg" src="../media/trails/trail-sweet-kadai.mp4" aria-label="Des gulab jamun dans la kadai. Recherche de terrain, oct. 2025."></video><span class="tag">Des gulab jamun dans la kadai<em>Recherche de terrain, oct. 2025</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-eating-by-hand.jpg" src="../media/trails/trail-eating-by-hand.mp4" aria-label="Mangé à la main, sur la feuille. Recherche de terrain, déc. 2024."></video><span class="tag">Mangé à la main, sur la feuille<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-street-stall.jpg" src="../media/trails/trail-street-stall.mp4" aria-label="La rue, juste devant, à midi. Recherche de terrain, oct. 2025."></video><span class="tag">La rue, juste devant, à midi<em>Recherche de terrain, oct. 2025</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-leaf-thali-spread.jpg" src="../media/trails/trail-leaf-thali-spread.mp4" aria-label="Une feuille, une douzaine de préparations. Recherche de terrain, déc. 2024."></video><span class="tag">Une feuille, une douzaine de préparations<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-fish-curry-steel.jpg" src="../media/trails/trail-fish-curry-steel.mp4" aria-label="Curry de poisson dans l'inox, tel qu'il est servi. Recherche de terrain, déc. 2022."></video><span class="tag">Curry de poisson dans l&rsquo;inox, tel qu&rsquo;il est servi<em>Recherche de terrain, déc. 2022</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-rice-and-curry.jpg" src="../media/trails/trail-rice-and-curry.mp4" aria-label="Du riz, du curry et une main. Recherche de terrain, déc. 2024."></video><span class="tag">Du riz, du curry et une main<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-fish-thali-table.jpg" src="../media/trails/trail-fish-thali-table.mp4" aria-label="Un thali local, sur une table en marbre. Recherche de terrain, déc. 2022."></video><span class="tag">Un thali local, sur une table en marbre<em>Recherche de terrain, déc. 2022</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-eatery-counter.jpg" src="../media/trails/trail-eatery-counter.mp4" aria-label="Derrière le comptoir. Recherche de terrain, déc. 2022."></video><span class="tag">Derrière le comptoir<em>Recherche de terrain, déc. 2022</em></span><div class="playhint"><span>&#9654;</span></div></div>
+</div>
+<div class="trail-note"><span>&#9654;</span> Touchez une vidéo pour la lancer. Filmé au téléphone sur la route, pas par une équipe de tournage.</div>
+      </div>
     </div>
-    <div class="testi-grid">
-      <div class="reel rv"><video preload="none" playsinline poster="../media/poster/testimonial-1.jpg" src="../media/video/testimonial-1.mp4"></video><span class="tag">Nos invités</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel rv"><video preload="none" playsinline poster="../media/poster/testimonial-2.jpg" src="../media/video/testimonial-2.mp4"></video><span class="tag">Pourquoi ils reviennent</span><div class="playhint"><span>▶</span></div></div>
-      <div class="reel rv"><video preload="none" playsinline poster="../media/poster/testimonial-3.jpg" src="../media/video/testimonial-3.mp4"></video><span class="tag">Premières bouchées</span><div class="playhint"><span>▶</span></div></div>
-    </div>
-    <div class="quote-cards">
-      <div class="quote-card rv"><span class="stars">★★★★★</span><p>« Une cuisine absolument incroyable. »</p><cite>Rusty D. · avis Uniiti</cite></div>
-      <div class="quote-card rv"><span class="stars">★★★★☆</span><p>« Des plats qui font voyager, une ambiance chaleureuse. À ne pas manquer. »</p><cite>Les Lyonnais · 641 avis et ça continue</cite></div>
-    </div>
-    <div class="press-row rv">
-      <span class="press-badge">Le Petit Futé</span>
-      <span class="press-badge">TripAdvisor · 4,1 / 5</span>
-      <span class="press-badge">Lyon City Crunch</span>
-      <span class="press-badge">MasterChef India</span>
-      <span class="press-badge">Institut Paul Bocuse</span>
+    <div class="signboards">
+      <a class="signboard" href="histoire.html#food-trails">Là où mène la recherche</a>
     </div>
   </div>
 </section>
 
-<!-- ============ VENIR ============ -->
-<section class="teal-block plaster" id="visit" style="padding-bottom:6rem">
-  <div class="wrap">
+<section id="community">
+  <div class="wrap split">
     <div class="rv">
-      <span class="k">Venez comme vous êtes</span>
-      <h2 class="h2">Trouver la porte</h2>
-      <p class="lead">Entre amis, en famille, pour des tapas légères ou un vrai festin. Ou juste un chai et un canapé. La porte est au 26 Rue Lortet, côté Gerland, dans le 7e.</p>
+      <span class="k">Découverte ou retrouvailles</span>
+      <h2 class="h2">Pour certains, Deb&rsquo;s est une découverte de l&rsquo;Inde.<br><span class="accent">Pour d&rsquo;autres, un goût qu&rsquo;ils cherchaient à retrouver.</span></h2>
+      <p class="lead">Des habitués lyonnais. Des Indiens installés en France qui cherchent une cuisine régionale plutôt qu&rsquo;un restaurant de curry standard. Des Français qui ont travaillé ou voyagé en Inde et à qui une chose bien précise manque. Et des gens qui amènent leurs amis et leur famille pour leur montrer une Inde plus vaste qu&rsquo;ils ne l&rsquo;imaginaient.</p>
     </div>
-    <div class="visit-grid">
-      <div class="rv" style="background:var(--cream);color:var(--ink);border:3px solid var(--ink);border-radius:8px;padding:2rem 2.2rem;box-shadow:8px 8px 0 rgba(0,0,0,.3)">
-        <h3 style="font-size:1.5rem">Deb's Bistro</h3>
-        <p style="margin-top:.3rem">26 Rue Lortet, 69007 Lyon</p>
-        <table class="hours">
-          <tr data-day="1"><td>Lundi</td><td>Fermé</td></tr>
-          <tr data-day="2"><td>Mardi</td><td>12h-14h · 18h-23h</td></tr>
-          <tr data-day="3"><td>Mercredi</td><td>12h-14h · 18h-23h</td></tr>
-          <tr data-day="4"><td>Jeudi</td><td>12h-14h · 18h-23h</td></tr>
-          <tr data-day="5"><td>Vendredi</td><td>12h-14h · 18h-23h</td></tr>
-          <tr data-day="6"><td>Samedi</td><td>Brunch + 18h-23h</td></tr>
-          <tr data-day="0"><td>Dimanche</td><td>Fermé</td></tr>
-        </table>
-        <div class="contact-lines">
-          <span>Réservations : <a href="tel:+33472714911">04 72 71 49 11</a></span>
-          <span>Instagram : <a href="https://www.instagram.com/debs_bistro/">@debs_bistro</a></span>
-          <span>À emporter &amp; livraison : <a href="https://usellweb.co/shops/debs-bistro">commander en ligne</a></span>
-        </div>
-        <a class="wa-btn" href="https://wa.me/33752676444">✆ WhatsApp du bistro</a>
-        <div style="margin-top:1.4rem"><a class="btn btn-book" href="https://debsbistro.fr/fr/booking">Réserver une table</a></div>
+    <div class="rv">
+      <img src="../media/img/spread-overhead.jpg" alt="Vue du dessus d'une table garnie de plats indiens régionaux chez Deb's Bistro" loading="lazy" width="1800" height="1350" style="border:3px solid var(--ink);box-shadow:8px 8px 0 var(--shadow)">
+    </div>
+  </div>
+</section>
+
+<section class="teal-block plaster" id="catering">
+  <div class="wrap">
+    <span class="k">Traiteur &amp; événements</span>
+    <h2 class="h2">Ambassades, grands groupes,<br><span style="color:var(--mustard-soft)">mariages et services sur deux jours.</span></h2>
+    <p class="lead">Une cuisine indienne régionale pensée pour chaque occasion, des fêtes privées et mariages jusqu&rsquo;aux grands événements d&rsquo;entreprise et officiels.</p>
+    <div class="cook-media" style="margin-top:2.4rem">
+      <img src="../media/img/event-embassy-india-paris.jpg" alt="Un déjeuner officiel servi pour l'Ambassade de l'Inde à Paris" loading="lazy" width="1105" height="960">
+      <img src="../media/img/event-wedding-table.jpg" alt="Une longue table dressée pour un mariage privé, servi par Deb's" loading="lazy" width="1200" height="1600">
+    </div>
+    <div class="signboards"><a class="signboard alt" href="traiteur-evenements.html">Parlez-nous de votre événement</a></div>
+  </div>
+</section>
+
+<section id="voices">
+  <div class="wrap">
+    <span class="k">Ce que disent nos clients</span>
+    <h2 class="h2">Avec leurs mots.</h2>
+    <!-- LEDGER V6/V15/V16/V18 and H5/H6: real Google reviews supplied by Manan from the
+         restaurant's Google Business Profile. Rating and count are the client's own figures.
+         Quotes are verbatim; the translated ones are Google's own translations. -->
+    <div class="gr-head">
+      <div class="gr-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg><b>Avis Google</b></div>
+      <div class="gr-score">
+        <span class="gr-num">4,5</span>
+        <span><span class="gr-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></span><br>
+        <span class="gr-count">686 avis</span></span>
       </div>
-      <div class="map-frame rv">
-        <iframe title="Plan vers Deb's Bistro, 26 Rue Lortet, Lyon" src="https://www.google.com/maps?q=Deb%27s+Bistro,+26+Rue+Lortet,+69007+Lyon&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <a class="btn btn-book gr-cta" href="https://maps.app.goo.gl/EC8REt6pLVeC2N6W8" rel="noopener">Les lire sur Google</a>
+    </div>
+    <div class="rev-rail">
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">G</div><div class="rev-who"><b>Gokul S</b><span>Local Guide &middot; il y a 2 ans</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>Majority of the &lsquo;Indian&rsquo; restaurants in Lyon don&rsquo;t serve authentic indian food. Just premade gravy with excessive cream parading as indian food. Deb&rsquo;s bistro is a rarity. Truly indian food that encompasses flavors many parts of india; not just the north.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">S</div><div class="rev-who"><b>Sakthikala A</b><span>Local Guide &middot; il y a un an</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>Must try their Saturday brunch. It is a fixed menu bringing one meal type from one region of India. And every week, they do a different regional cuisine. Don&rsquo;t miss out.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">D</div><div class="rev-who"><b>Dee</b><span>Local Guide &middot; il y a 3 ans</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>We felt such nostalgia eating the regional delicacies from our home country. The fact that they represent food from different regions of India on a rotating menu with such precision is exceptional. More people can taste what Indian cuisine has to offer beyond the typical curries.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">L</div><div class="rev-who"><b>Lyam HR</b><span>Local Guide &middot; il y a un an</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>A trip to the other side of the world without leaving Lyon. And by the way, the best naan I&rsquo;ve ever had here. The dishes are spiced (but not hot) and truly delicious.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">A</div><div class="rev-who"><b>Abhishek Pai</b><span>Client &middot; il y a 4 ans</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>His light touch with chillies but wholesome complex flavour palette of spices makes each dish unique and a pleasure to eat. I was born in India but grew up in the UK, and I missed the delicious home cooked meals by my parents.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">N</div><div class="rev-who"><b>Nolwenn Roux</b><span>Local Guide &middot; il y a 4 ans</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>By far my favourite little Indian bistro. Deb&rsquo;s cooking takes you on a journey all over India. Here, forget the classic, identical menus of Indian restaurants in France.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">H</div><div class="rev-who"><b>Herv&eacute; C</b><span>Local Guide &middot; il y a un an</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>A wonderful discovery that took us on a journey through different regions of India. Dishes you won&rsquo;t find anywhere else, a restaurant that goes beyond the classics. The melt-in-your-mouth duck and the bone marrow dish were a real treat.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">N</div><div class="rev-who"><b>Nicolas Bougeard</b><span>Local Guide &middot; il y a 4 ans</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>An Indian restaurant that stands out from the crowd, offering dishes you won&rsquo;t find anywhere else, representing different regions. An Indian friend told me that the flavors are truly authentic.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">N</div><div class="rev-who"><b>Nad C</b><span>Local Guide &middot; il y a 2 ans</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>Having been to India, this is certainly the best Indian restaurant I&rsquo;ve had in France. The dishes were refined and perfectly seasoned.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">M</div><div class="rev-who"><b>Mike Reding</b><span>Local Guide &middot; il y a 8 mois</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>We&rsquo;ve been to Chef Debdutta Gupta&rsquo;s place five times and each time walked away happy that we came. The food is flavourful, sumptuous and abundant.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">S</div><div class="rev-who"><b>Saumi Bane</b><span>Local Guide &middot; il y a un an</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>We visited as a family of four and we had the weekend thali. The portions were great and the dish choices were great too. This is definitely the best Indian restaurant in Lyon by far.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">C</div><div class="rev-who"><b>Caroline M.D</b><span>Local Guide &middot; il y a 10 mois</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>The naan with Reblochon cheese is amazing. You can only find it in this restaurant and not anywhere else in India. I highly recommend it.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">V</div><div class="rev-who"><b>Victoria J&eacute;gou</b><span>Local Guide &middot; il y a 2 mois</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>We got takeout for lunch to reheat for dinner. It was absolutely delicious. The instructions for reheating the dishes were perfect. Tradition and originality were both present.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    <article class="rev"><div class="rev-top"><div class="rev-av" aria-hidden="true">M</div><div class="rev-who"><b>Mariella Martinon</b><span>Local Guide &middot; il y a un an</span></div></div><div class="rev-stars" aria-label="5 sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;<span style="opacity:.35"></span></div><blockquote>A complete change of scenery. A warm welcome, a pleasant aroma of spices upon arrival. Quick service, generous portions, and delicious food. I especially loved the lassis.</blockquote><div class="rev-src"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-3.9H24v7.1h12.1c-.2 1.8-1.6 4.5-4.5 6.3l-.1.3 6.5 5 .5.1c4.1-3.8 6.6-9.4 6.6-15z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-6.9-5.4c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-6.8 5.2C6.6 41.6 14.7 46 24 46z"/><path fill="#FBBC05" d="M11.5 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .7-4.4v-.3l-6.8-5.3-.2.1C2.9 17 2 20.4 2 24s.9 7 2.4 9.9l7.1-5.5z"/><path fill="#EA4335" d="M24 10.6c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 4.4 29.9 2 24 2 18.6 2 14 5.1 11.4 9.6l7.1 5.5c1.8-5.3 6.7-8.5 12.5-8.5z"/></svg> Publié sur Google</div></article>
+    </div>
+    <div class="trail-note"><span>&#8594;</span> Faites défiler pour en voir plus. La note et le nombre d&rsquo;avis sont ceux, en direct, de notre fiche Google.</div>
+  </div>
+</section>
+
+<section class="teal-block plaster" id="visit">
+  <div class="wrap split">
+    <div>
+      <span class="k">Venir chez Deb&rsquo;s</span>
+      <h2 class="h2">Une salle composée au fil du temps.</h2>
+      <p class="lead">Photos de famille, images de voyages culinaires, masques, peintures et objets rapportés de différentes régions de l&rsquo;Inde. Deb&rsquo;s ne reconstitue pas la maison d&rsquo;une région en particulier&nbsp;; c&rsquo;est une maison personnelle, fruit d&rsquo;années passées à chiner en Inde.</p>
+      <div class="addr" style="margin-top:1.6rem;color:#dce4de">
+        26 Rue Lortet, 69007 Lyon<br>
+        <a href="tel:+33472714911" style="color:var(--mustard-soft)">+33 4 72 71 49 11</a>
       </div>
+      <div class="signboards">
+        <a class="signboard alt" href="https://debsbistro.fr/fr/booking">Réserver une table</a>
+        <a class="signboard" href="venir.html">Horaires &amp; accès</a>
+      </div>
+    </div>
+    <!-- LEDGER V7: Manan: "this empty space on the right does not look nice." -->
+    <div class="visit-stack">
+      <img src="../media/img/interior-warm-bar.jpg" alt="Le bar et le comptoir de Deb's Bistro, lumière chaude des lampes sur le bois" loading="lazy">
+      <img src="../media/img/interior-warm-dining.jpg" alt="La salle de Deb's Bistro, tables en bois sous des suspensions à la lumière chaude" loading="lazy">
     </div>
   </div>
 </section>
 
 </main>
-
-<!-- ============ FOOTER ============ -->
+<section class="reelband">
+  <div class="wrap">
+    <span class="k">De la cuisine et de la route</span>
+    <h2>À quoi ça ressemble vraiment.</h2>
+    <p class="lead">Des images du passe, du bar et des voyages de recherche. Pas de sous-titres, pas de voix off, pas de son.</p>
+  </div>
+  <div class="reel-marquee" aria-label="Vidéos Instagram de Deb's Bistro">
+    <div class="reel-track">
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-1.jpg" data-src="../media/reels/reel-1.mp4" aria-label="Curry de poisson de Mangalore, dans la poêle"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-2.jpg" data-src="../media/reels/reel-2.mp4" aria-label="Tout droit de Lucknow"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-3.jpg" data-src="../media/reels/reel-3.mp4" aria-label="Dressé et envoyé"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-4.jpg" data-src="../media/reels/reel-4.mp4" aria-label="Kolkata, dans la rue"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-5.jpg" data-src="../media/reels/reel-5.mp4" aria-label="La route qui descend vers la côte"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-6.jpg" data-src="../media/reels/reel-6.mp4" aria-label="Encore Kolkata"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-7.jpg" data-src="../media/reels/reel-7.mp4" aria-label="Derrière le bar de Deb's"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-1.jpg" data-src="../media/reels/reel-1.mp4" aria-label="Curry de poisson de Mangalore, dans la poêle"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-2.jpg" data-src="../media/reels/reel-2.mp4" aria-label="Tout droit de Lucknow"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-3.jpg" data-src="../media/reels/reel-3.mp4" aria-label="Dressé et envoyé"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-4.jpg" data-src="../media/reels/reel-4.mp4" aria-label="Kolkata, dans la rue"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-5.jpg" data-src="../media/reels/reel-5.mp4" aria-label="La route qui descend vers la côte"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-6.jpg" data-src="../media/reels/reel-6.mp4" aria-label="Encore Kolkata"></video></div>
+        <div class="rb"><video preload="none" muted loop playsinline poster="../media/poster/reel-7.jpg" data-src="../media/reels/reel-7.mp4" aria-label="Derrière le bar de Deb's"></video></div>
+    </div>
+  </div>
+  <div class="wrap foot-note">
+    <a href="https://www.instagram.com/debs_bistro/" rel="noopener">Suivre @debs_bistro</a>
+    <a href="https://debsbistro.fr/fr/booking">Réserver une table</a>
+  </div>
+</section>
+<div class="sticky-bar">
+  <a class="sb-reserve" href="https://debsbistro.fr/fr/booking">Réserver</a>
+  <a class="sb-menu" href="menu.html">La carte</a>
+</div>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="foot-brand">Deb's Bistro</div>
-        <div class="foot-hindi hindi" lang="hi">धन्यवाद · आते रहिए</div>
-        <p style="margin-top:1rem;font-size:.92rem;max-width:34ch">Une maison, un livre, une porte ouverte sur l'Inde. Lyon 7e, depuis 2019.</p>
-      </div>
-      <div>
-        <h4>Le bistro</h4>
-        <ul>
-          <li><a href="histoire.html">Notre histoire</a></li>
-          <li><a href="menu.html">La carte</a></li>
-          <li><a href="index.html#brunch">Brunch du samedi</a></li>
-          <li><a href="https://debsbistro.fr/fr/booking">Réservations</a></li>
-          <li><a href="https://usellweb.co/shops/debs-bistro">Commander en ligne</a></li>
+        <div class="foot-brand">Deb&rsquo;s Bistro</div>
+        <div class="foot-hindi hindi" lang="hi">&#2342;&#2375;&#2348;&#2381;&#2360; &#2348;&#2367;&#2360;&#2381;&#2340;&#2381;&#2352;&#2379;</div>
+        <ul style="margin-top:1rem">
+          <li>26 Rue Lortet, 69007 Lyon</li>
+          <li>Du lundi au vendredi 12h00&ndash;14h00, 19h00&ndash;23h00</li>
+          <li>Samedi 12h00&ndash;15h00, 19h00&ndash;23h00 &middot; Fermé le dimanche</li>
+          <li><a href="https://debsbistro.fr/fr/booking">Réserver une table</a></li>
+          <li><a href="tel:+33472714911">04 72 71 49 11</a></li>
+          <li><a href="https://usellweb.co/shops/debs-bistro">Commander à emporter</a></li>
         </ul>
       </div>
       <div>
-        <h4>Ailleurs</h4>
+        <h4>Découvrir</h4>
         <ul>
-          <li><a href="https://www.instagram.com/debs_bistro/">Instagram</a></li>
-          <li><a href="https://www.facebook.com/Debsbistroindien/">Facebook</a></li>
-          <li><a href="https://www.chefdebdutta.com">Chef Deb Dutta</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="menu.html">La carte</a></li>
+          <li><a href="thali-du-samedi.html">Thali du samedi</a></li>
+          <li><a href="traiteur-evenements.html">Traiteur &amp; événements</a></li>
+          <li><a href="venir.html">Venir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>L&rsquo;univers Deb&rsquo;s</h4>
+        <ul>
           <li><a href="https://gullyparis.com" rel="noopener">Gully, Indian Street Kitchen, Paris</a></li>
-          <li><a href="../index.html" lang="en">English version</a></li>
+          <li><a href="https://www.chefdebdutta.com" rel="noopener">Chef Debdutta Gupta, parcours, collaborations &amp; projets</a></li>
+          <li><a href="https://www.instagram.com/debs_bistro/" rel="noopener">Instagram</a></li>
+        </ul>
+        <h4 style="margin-top:1.6rem">Informations légales</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions l&eacute;gales</a></li>
+          <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="confidentialite.html#cookies">Gestion des cookies</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-base">
-      <span>© 2026 Deb's Bistro · 26 Rue Lortet, 69007 Lyon · 04 72 71 49 11</span>
-      <span>Site par <a href="https://www.marketincrew.com">MarketinCrew</a></span>
+      <span>&copy; 2026 Deb&rsquo;s Bistro, Lyon.</span>
+      <span><a href="https://www.marketincrew.com" rel="noopener">Site réalisé par MarketinCrew</a></span>
     </div>
   </div>
 </footer>
-
-<div class="lightbox" role="dialog" aria-label="Image agrandie"><img src="" alt=""></div>
-<script src="../assets/main.js?v=6eacfa0a"></script>
+<script src="../assets/main.js?v=55dd7bc4"></script>
 </body>
 </html>
