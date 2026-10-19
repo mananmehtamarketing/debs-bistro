@@ -1,205 +1,273 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD2R2B5R3F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-JD2R2B5R3F");</script>
-<!-- LEDGER A15/M1: FRENCH PAGES ARE OUT OF SCOPE FOR GATE 1. The brief requires the
-     French site to be written from a separate French execution document, adapted for a
-     French reader rather than translated from the English. That document has not been
-     supplied. Only three things were changed here in this pass:
-       1. noindex added (LEDGER J1, staging posture)
-       2. the discontinued Deb's Table product removed (LEDGER A8, delete list is absolute)
-       3. the Deb's Street Food link repointed to Gully (LEDGER A14)
-     Everything else is untouched, pending the French document. -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Notre Histoire · Deb's Bistro Lyon | De MasterChef India à la Rue Lortet</title>
-<meta name="description" content="L'histoire du Chef Debdutta Gupta : la cuisine d'un grand-père en Inde, MasterChef, l'Institut Paul Bocuse, et un bistro à Lyon construit sur des voyages culinaires annuels à travers l'Inde.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>L'histoire de Deb's Bistro | Chef Debdutta Gupta, Lyon</title>
+<meta name="description" content="De MasterChef India et l'Institut Paul Bocuse à la recherche culinaire régionale à travers l'Inde, jusqu'à l'ouverture de Deb's Bistro à Lyon.">
+<!-- LEDGER J1: staging only. While this build lives on *.vercel.app it must stay out of the
+     index so it cannot compete with the client's own domain. Remove noindex AND the
+     disallow-all robots.txt at domain cutover, not before. -->
 <link rel="canonical" href="https://www.debsbistro.com/fr/histoire">
 <link rel="alternate" hreflang="en" href="https://www.debsbistro.com/story">
 <link rel="alternate" hreflang="fr" href="https://www.debsbistro.com/fr/histoire">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="L'histoire de Deb's Bistro | Chef Debdutta Gupta, Lyon">
+<meta property="og:description" content="De MasterChef India et l'Institut Paul Bocuse à la recherche culinaire régionale à travers l'Inde, jusqu'à l'ouverture de Deb's Bistro à Lyon.">
+<meta property="og:image" content="https://www.debsbistro.com/media/img/interior-warm-dining.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Oswald:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Noto+Serif+Bengali:wght@500&family=Noto+Serif+Tamil:wght@500&display=swap" rel="stylesheet">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Oswald:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css?v=e8e7b905">
 </head>
 <body>
-<a class="skip" href="#main">Aller au contenu</a>
 <div class="grain" aria-hidden="true"></div>
-
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="ticker"><div class="ticker-track"><span>&nbsp;Cuisine indienne régionale, étudiée à travers l&rsquo;Inde et cuisinée à Lyon&nbsp; &middot; &nbsp;<b>26 Rue Lortet, 69007 Lyon</b>&nbsp; &middot; &nbsp;Le Thali du samedi, chaque samedi midi&nbsp; &middot; &nbsp;Épicé, pas forcément piquant&nbsp; &middot; &nbsp;</span></div></div>
 <nav class="nav">
   <div class="wrap nav-in">
     <a class="brand" href="index.html">
-      <span class="brand-name">Deb's <span>Bistro</span></span>
-      <span class="brand-sub">Bistro Indien · Lyon</span>
+      <span class="brand-name">Deb<span>&rsquo;</span>s Bistro</span>
+      <span class="brand-sub">Lyon 7<sup>e</sup> &middot; depuis 2019</span>
     </a>
-    <button class="burger" aria-label="Ouvrir le menu">Menu</button>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
     <div class="nav-links">
-      <a href="histoire.html">Notre Histoire</a>
-      <a href="menu.html">La Carte</a>
-      <a href="index.html#reels">Reels</a>
-      <a href="index.html#visit">Venir</a>
-      <a class="lang-pill" href="../story.html" lang="en" title="English version">EN</a>
-      <a class="btn btn-book btn-book-nav" href="https://debsbistro.fr/fr/booking">Réserver</a>
+      <a href="histoire.html" class="active">Histoire</a>
+      <a href="menu.html">La carte</a>
+      <a href="traiteur-evenements.html">Traiteur &amp; événements</a>
+      <a href="thali-du-samedi.html">Thali du samedi</a>
+      <a href="venir.html">Venir</a>
+      <a class="lang-pill" href="../story.html" hreflang="en" lang="en">EN</a>
+      <a class="btn btn-book nav-reserve" href="https://debsbistro.fr/fr/booking">Réserver</a>
     </div>
   </div>
 </nav>
-
 <header class="page-head">
   <div class="wrap">
-    <span class="k" style="color:var(--mustard-soft)">L'Inde en France · La France en Inde</span>
-    <h1>L'Histoire de Deb's</h1>
-    <span class="hindi" lang="hi">एक रसोई, दो दुनिया</span>
-    <p>La cuisine d'un grand-père, un plateau de télévision, un institut français, et vingt-huit cuisines de l'Inde. Voilà comment un bistro de Lyon 7e s'est mis à avoir le goût de tout un sous-continent.</p>
+    <h1>Je n&rsquo;ai pas grandi dans une famille de passionnés de cuisine.<br>Je le suis devenu.</h1>
+    <p>L&rsquo;histoire du chef Debdutta Gupta, de Jamshedpur à la Rue Lortet.</p>
   </div>
 </header>
 
 <main id="main">
 
-<!-- CH 1 -->
 <section class="chapter">
   <div class="wrap split">
     <div class="rv">
-      <div class="chapter-num">01</div>
-      <span class="k">Là où tout commence</span>
-      <h2 class="h2">Un grand-père,<br><span class="accent">et des ingrédients simples devenus magiques</span></h2>
-      <p class="lead">Le voyage culinaire de Deb commence dans le plus humble des décors : regarder son grand-père transformer les ingrédients du quotidien en repas dont on parle encore. Il l'apprend tôt : la cuisine n'est pas une recette. C'est une personne, un lieu, et une histoire racontée à la bonne température.</p>
-      <p class="lead" style="margin-top:1rem">Cet instinct l'emmène à l'école hôtelière de Chennai, puis là où sa famille ne l'attendait pas : sur un plateau de télévision.</p>
+      <span class="chapter-num">01</span>
+      <h2 class="h2">La curiosité avant le métier</h2>
+      <p class="lead">Deb a grandi à Jamshedpur. La cuisine n&rsquo;était pas au centre de la vie de famille. Son grand-père cuisinait et lui a laissé quelques premiers souvenirs, mais l&rsquo;obsession s&rsquo;est construite toute seule&nbsp;: à vélo sur le chemin des cours particuliers, en mettant discrètement de côté (ou en chapardant) un peu d&rsquo;argent de poche, et en s&rsquo;arrêtant pour un chaat, un bhel puri, un dosa ou tout ce qu&rsquo;il avait envie de goûter cette semaine-là.</p>
+      <p class="lead" style="margin-top:.9rem">Ce n&rsquo;a jamais été la nostalgie d&rsquo;une seule cuisine régionale. C&rsquo;était, dès le départ, une curiosité pour toutes.</p>
     </div>
-    <figure class="stamp tilt-l rv"><img src="../media/img/chef-laughing.jpg" alt="Le Chef Deb, riant, menus en main au bistro" loading="lazy"><figcaption>Le conteur de la Rue Lortet</figcaption></figure>
+    <div class="rv">
+      <!-- LEDGER E18: childhood or family image not supplied. The brief permits falling
+           back to a current strong portrait, which is what this is. -->
+      <figure class="stamp tilt-l"><img src="../media/img/story-deb-portrait.jpg" alt="Le chef Debdutta Gupta photographié au Deb's Bistro" loading="lazy" width="1400" height="2096"><figcaption>Le chef Debdutta Gupta</figcaption></figure>
+    </div>
   </div>
 </section>
 
-<!-- CH 2 -->
 <section class="chapter teal-block plaster">
   <div class="wrap split">
-    <figure class="stamp tilt-r rv"><img src="../media/img/chef-magazine.jpg" alt="Le Chef Deb dans un magazine gastronomique français" loading="lazy"><figcaption>Dans la presse française</figcaption></figure>
     <div class="rv">
-      <div class="chapter-num">02</div>
-      <span class="k">La longue route vers Lyon</span>
-      <h2 class="h2">MasterChef India,<br>puis la maison Bocuse</h2>
-      <p class="lead">MasterChef India le met sur la scène nationale. Mais le vrai virage arrive en 2016, à l'Institut Paul Bocuse : un master en innovation culinaire, des cuisines menées à la discipline française, et des mentors de la lignée d'Anne-Sophie Pic et de Paul Bocuse lui-même.</p>
-      <div class="timeline">
-        <div class="t-item"><h4>MasterChef India</h4><p>La scène nationale, et la première preuve que sa cuisine sait raconter des histoires à des inconnus.</p></div>
-        <div class="t-item"><h4>2016 · Institut Paul Bocuse, Lyon</h4><p>Master en innovation culinaire et leadership. L'Inde apprend à parler français.</p></div>
-        <div class="t-item"><h4>2019 · Ouverture de Deb's Bistro</h4><p>26 Rue Lortet, Lyon 7e. Un bistro où chaque plat est une page d'un carnet de voyage indien.</p></div>
-        <div class="t-item"><h4>Depuis</h4><p>Des dîners pour le ministre indien des Affaires étrangères et le chef d'état-major des armées indien à Paris, des expositions culinaires à Saint-Tropez, une street food company à Paris, et une salle à Lyon qui se remplit d'habitués.</p></div>
-      </div>
+      <figure class="stamp tilt-r"><img src="../media/img/story-masterchef.jpg" alt="Debdutta Gupta en compétition dans MasterChef India, saison 2" loading="lazy" width="1138" height="640"><figcaption>MasterChef India, saison 2</figcaption></figure>
+    </div>
+    <div class="rv">
+      <span class="chapter-num">02</span>
+      <h2 class="h2">MasterChef India, saison 2</h2>
+      <p class="lead">Alors qu&rsquo;il est encore élève, Deb participe à la saison 2 de MasterChef India. C&rsquo;est son premier vrai contact avec le monde de la cuisine professionnelle, et avec des chefs comme Vikas Khanna et Kunal Kapur.</p>
+      <p class="lead" style="margin-top:.9rem">L&rsquo;émission n&rsquo;a pas fait de lui un chef. Elle lui a ouvert la porte de l&rsquo;univers professionnel de la cuisine, et elle a convaincu sa famille et son entourage que cuisiner pouvait être un vrai métier.</p>
+      <!-- LEDGER: AMBIGUOUS. The brief says "while still in Class 12". chefdebdutta.com says
+           "at 17, the youngest contestant". The on-screen caption in this still reads 18.
+           Wording kept deliberately non-specific until Deb settles it. -->
     </div>
   </div>
 </section>
 
-<!-- CH 3 -->
 <section class="chapter">
   <div class="wrap">
-    <div class="split">
-      <div class="rv">
-        <div class="chapter-num">03</div>
-        <span class="k">La recherche, faite à pied</span>
-        <h2 class="h2">Chaque année, l'Inde.<br><span class="accent">Ville par ville, cuisine par cuisine.</span></h2>
-        <p class="lead">Cette carte ne s'écrit pas à Lyon. Elle se collecte : cuisine tribale à Jamshedpur, étals de rue à Kolkata, repas sur feuille de bananier à Kochi, marchés aux épices de Delhi, dabbas de Bombay, plantations de Coorg. Le chef mange chez les fermiers, les cuisinières de famille et les vendeurs, apprend le plat là où il est né, et seulement ensuite le plat a le droit d'entrer à la carte.</p>
-        <div class="city-line">
-          <span class="city-chip">Bombay <small lang="hi">मुंबई</small></span>
-          <span class="city-chip">Kolkata <small lang="bn" style="font-family:'Noto Serif Bengali',serif">কলকাতা</small></span>
-          <span class="city-chip">Chennai <small lang="ta" style="font-family:'Noto Serif Tamil',serif">சென்னை</small></span>
-          <span class="city-chip">Kochi <small lang="hi">कोच्चि</small></span>
-          <span class="city-chip">Jamshedpur <small lang="hi">जमशेदपुर</small></span>
-          <span class="city-chip">Delhi <small lang="hi">दिल्ली</small></span>
-          <span class="city-chip">Coorg <small lang="hi">कूर्ग</small></span>
-          <span class="city-chip">Lucknow <small lang="hi">लखनऊ</small></span>
-        </div>
-      </div>
-      <div class="cluster rv">
-        <figure class="stamp c1"><img src="../media/img/event-catering-1.jpg" alt="Les plats de Deb's servis en extérieur" loading="lazy"><figcaption>Les food trails, partagés</figcaption></figure>
-        <figure class="stamp c2"><img src="../media/img/gallery-puchka.jpg" alt="Puchka de Kolkata" loading="lazy"><figcaption>Puchka de Kolkata</figcaption></figure>
-        <figure class="stamp c3"><img src="../media/img/gallery-salade-goanaise.jpg" alt="Salade goanaise mangue et avocat" loading="lazy"><figcaption>Notes côtières</figcaption></figure>
-      </div>
+    <span class="chapter-num">03</span>
+    <h2 class="h2">Les fondations professionnelles</h2>
+    <div class="timeline">
+      <div class="t-item"><h4>IHM Chennai</h4><p>C&rsquo;est là que se sont forgées la discipline, l&rsquo;endurance et la rigueur.</p></div>
+      <div class="t-item"><h4>Haaga-Helia University of Applied Sciences, Finlande</h4><p>Une expérience d&rsquo;études à l&rsquo;international.</p></div>
+      <div class="t-item"><h4>Université de Stavanger, Norvège</h4><p>Une expérience d&rsquo;études à l&rsquo;international.</p></div>
+      <div class="t-item"><h4>Institut Paul Bocuse, Lyon (aujourd&rsquo;hui Institut Lyfe)</h4><p>Culinary Leadership &amp; Innovation.</p></div>
     </div>
+    <!-- LEDGER: AMBIGUOUS. The brief frames Haaga-Helia and Stavanger as study exposure and
+         Institut Paul Bocuse as the master's. chefdebdutta.com states a master's at BOTH
+         Stavanger and Institut Paul Bocuse, and omits Haaga-Helia. Brief followed. -->
+    <!-- LEDGER V8: was four images, three across with one orphaned below, and two of them
+         near-identical group shots. Now an even three, and the group shot is cropped in so
+         the faces actually read. Manan: "we just need three images here." -->
+    <div class="grid3">
+      <figure><img src="../media/img/story-ihm-chennai.jpg" alt="Le chef Deb dans une cuisine professionnelle pendant sa formation" loading="lazy" data-zoom><figcaption>Les premières cuisines professionnelles</figcaption></figure>
+      <figure><img src="../media/img/story-bocuse-group-zoom.jpg" alt="Le chef Deb avec sa promotion, en veste de chef, à l'Institut Paul Bocuse" loading="lazy" data-zoom><figcaption>Institut Paul Bocuse</figcaption></figure>
+      <figure><img src="../media/img/story-deb-with-bocuse.jpg" alt="Le chef Deb assis aux côtés de Paul Bocuse" loading="lazy" data-zoom><figcaption>Avec Paul Bocuse</figcaption></figure>
+    </div>
+    <!-- LEDGER E22: caption kept factual. The delete list bans any teacher-or-heritage
+         framing around Bocuse or Anne-Sophie Pic. Deb to confirm the man
+         pictured is Paul Bocuse before this ships. -->
   </div>
 </section>
 
-<!-- CH 4: la salle -->
 <section class="chapter teal-block plaster">
   <div class="wrap">
-    <div class="center rv">
-      <div class="chapter-num" style="color:var(--mustard-soft)">04</div>
-      <span class="k">La salle où vous êtes assis</span>
-      <h2 class="h2">Une maison de Bombay vintage, dans une rue de Lyon</h2>
-      <p class="lead" style="margin:0 auto">Des murs patinés, des tables en bois, de vieilles affiches de Bollywood, des étagères de bouteilles et de photos rapportées de la route. Rien ici n'a été dessiné dans un studio. Tout a été collecté, comme les recettes.</p>
+    <span class="chapter-num">04</span>
+    <h2 class="h2">Avant le restaurant, une question de recherche</h2>
+    <p class="lead">Le mémoire de master de Deb portait sur la perception et l&rsquo;acceptation de la cuisine indienne par les consommateurs français. Il a d&rsquo;abord étudié les a priori nés des codes familiers du restaurant de curry. Puis, dans son premier projet professionnel, il a proposé pendant 53 semaines 53 menus régionaux indiens différents, et comparé ensuite la façon dont les clients percevaient la cuisine.</p>
+    <p class="lead" style="margin-top:.9rem">Un paturi enveloppé dans une feuille de bananier pouvait être perçu comme une cuisine tropicale ou insulaire, alors que le butter chicken était immédiatement identifié comme indien. Cette recherche fait désormais partie de la logique de Deb&rsquo;s Bistro&nbsp;: élargir la compréhension de la cuisine indienne, sans la rendre moins indienne.</p>
+  </div>
+</section>
+
+<section class="chapter" id="food-trails">
+  <div class="wrap">
+    <span class="chapter-num">05</span>
+    <h2 class="h2">Les Food Trails de Deb</h2>
+    <p class="quote-book">&laquo;&nbsp;Une recette peut vous dire comment cuisiner un plat. Elle ne peut pas vous dire quel goût il doit avoir.&nbsp;&raquo;</p>
+    <div class="rule"></div>
+    <p class="lead">Deb consacre environ un mois par an à voyager et à faire de la recherche culinaire en Inde, de village en ville, en train, en voiture et à moto, avec des amis, sur les conseils des gens du coin, ou simplement avec les personnes qu&rsquo;il rencontre en chemin.</p>
+    <p class="lead" style="margin-top:.9rem">La recherche va au-delà de la recette&nbsp;: le climat, l&rsquo;histoire, la culture, la nutrition, la saisonnalité, l&rsquo;environnement, les accompagnements, la structure du repas, et la raison pour laquelle on mange de telle façon à tel endroit.</p>
+    <div class="city-line">
+      <span class="city-chip">Lucknow</span><span class="city-chip">Banaras</span><span class="city-chip">Jaipur</span><span class="city-chip">Sud du Gujarat</span><span class="city-chip">Mumbai</span><span class="city-chip">Pune</span><span class="city-chip">Nagpur</span><span class="city-chip">Odisha</span><span class="city-chip">Côte de l&rsquo;Odisha</span><span class="city-chip">Tamil Nadu</span><span class="city-chip">Shillong</span><span class="city-chip">Assam</span><span class="city-chip">Bengale</span><span class="city-chip">Jharkhand</span><span class="city-chip">Delhi</span>
     </div>
-    <div class="mosaic">
-      <figure><img src="../media/img/interior-dining-room.jpg" alt="La salle de Deb's Bistro" loading="lazy" data-zoom><figcaption>La salle</figcaption></figure>
-      <figure><img src="../media/img/interior-don-poster.jpg" alt="Affiche vintage du film Don sur le mur" loading="lazy" data-zoom><figcaption>Le mur de Bombay</figcaption></figure>
-      <figure><img src="../media/img/interior-shelves.jpg" alt="Étagères de bouteilles et affiches vintage" loading="lazy" data-zoom><figcaption>Collecté, pas décoré</figcaption></figure>
-      <figure><img src="../media/img/interior-tables.jpg" alt="Tables dressées au bistro" loading="lazy" data-zoom><figcaption>Prêt pour le service</figcaption></figure>
-      <figure><img src="../media/img/interior-posters-night.jpg" alt="Affiches et lanterne le soir" loading="lazy" data-zoom><figcaption>Lumière du soir</figcaption></figure>
-      <figure><img src="../media/img/interior-wall.jpg" alt="Mur patiné et cadres" loading="lazy" data-zoom><figcaption>Une patine honnête</figcaption></figure>
-      <figure><img src="../media/img/team-table.jpg" alt="L'équipe de Deb's Bistro derrière une table garnie" loading="lazy" data-zoom><figcaption>L'équipe</figcaption></figure>
-      <figure><img src="../media/img/gallery-food-spread.jpg" alt="Une grande tablée chez Deb's" loading="lazy" data-zoom><figcaption>Une table pour tous</figcaption></figure>
-      <figure><img src="../media/img/gallery-street-beer.jpg" alt="Street food et bière" loading="lazy" data-zoom><figcaption>L'apéro, version indienne</figcaption></figure>
+    <!-- LEDGER E23/A6/G4: DONE 21 Aug 2026, real fieldwork supplied by Deb. -->
+    <div class="trail-rail">
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-banana-leaf-service.jpg" src="../media/trails/trail-banana-leaf-service.mp4" aria-label="Le riz servi sur la feuille. Recherche de terrain, déc. 2024."></video><span class="tag">Le riz servi sur la feuille<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-roadside-kitchen.jpg" src="../media/trails/trail-roadside-kitchen.mp4" aria-label="Une cuisine de bord de route, en plein service. Recherche de terrain, déc. 2024."></video><span class="tag">Une cuisine de bord de route, en plein service<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-sweet-kadai.jpg" src="../media/trails/trail-sweet-kadai.mp4" aria-label="Des gulab jamun dans la kadai. Recherche de terrain, oct. 2025."></video><span class="tag">Des gulab jamun dans la kadai<em>Recherche de terrain, oct. 2025</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-eating-by-hand.jpg" src="../media/trails/trail-eating-by-hand.mp4" aria-label="Mangé à la main, sur la feuille. Recherche de terrain, déc. 2024."></video><span class="tag">Mangé à la main, sur la feuille<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-street-stall.jpg" src="../media/trails/trail-street-stall.mp4" aria-label="La rue, juste devant, à midi. Recherche de terrain, oct. 2025."></video><span class="tag">La rue, juste devant, à midi<em>Recherche de terrain, oct. 2025</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-leaf-thali-spread.jpg" src="../media/trails/trail-leaf-thali-spread.mp4" aria-label="Une feuille, une douzaine de préparations. Recherche de terrain, déc. 2024."></video><span class="tag">Une feuille, une douzaine de préparations<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-fish-curry-steel.jpg" src="../media/trails/trail-fish-curry-steel.mp4" aria-label="Curry de poisson dans l'inox, tel qu'il est servi. Recherche de terrain, déc. 2022."></video><span class="tag">Curry de poisson dans l&rsquo;inox, tel qu&rsquo;il est servi<em>Recherche de terrain, déc. 2022</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-rice-and-curry.jpg" src="../media/trails/trail-rice-and-curry.mp4" aria-label="Du riz, du curry et une main. Recherche de terrain, déc. 2024."></video><span class="tag">Du riz, du curry et une main<em>Recherche de terrain, déc. 2024</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-fish-thali-table.jpg" src="../media/trails/trail-fish-thali-table.mp4" aria-label="Un thali local, sur une table en marbre. Recherche de terrain, déc. 2022."></video><span class="tag">Un thali local, sur une table en marbre<em>Recherche de terrain, déc. 2022</em></span><div class="playhint"><span>&#9654;</span></div></div>
+  <div class="trail"><video preload="none" playsinline muted poster="../media/poster/trail-eatery-counter.jpg" src="../media/trails/trail-eatery-counter.mp4" aria-label="Derrière le comptoir. Recherche de terrain, déc. 2022."></video><span class="tag">Derrière le comptoir<em>Recherche de terrain, déc. 2022</em></span><div class="playhint"><span>&#9654;</span></div></div>
+</div>
+<div class="trail-note"><span>&#9654;</span> Touchez une vidéo pour la lancer. Filmé au téléphone sur la route, pas par une équipe de tournage.</div>
+    <!-- LEDGER V9: was a column mosaic that left two very tall images and a hole beside them.
+         Now a uniform 4:3 grid, six tiles, no gaps at any width. -->
+    <div class="grid3">
+      <figure><img src="../media/img/trail-still-fish-thali.jpg" alt="Un thali de poisson dans des bols en inox, dans une petite cantine locale" loading="lazy" data-zoom><figcaption>Tel qu&rsquo;il était servi</figcaption></figure>
+      <figure><img src="../media/img/trail-still-steel-bowls.jpg" alt="Plusieurs currys dans des bols en inox, posés sur un comptoir en marbre" loading="lazy" data-zoom><figcaption>De l&rsquo;inox, pas de la porcelaine</figcaption></figure>
+      <figure><img src="../media/img/trail-still-mango-dal.jpg" alt="Un dal jaune à la mangue, relevé d'épices revenues, dans un bol en inox" loading="lazy" data-zoom><figcaption>Dal à la mangue</figcaption></figure>
+      <figure><img src="../media/img/trail-still-kitchen.jpg" alt="L'intérieur d'une cuisine en activité pendant le voyage de recherche" loading="lazy" data-zoom><figcaption>La cuisine, en coulisses</figcaption></figure>
+      <figure><img src="../media/img/trail-still-table-spread.jpg" alt="Une table en marbre couverte de plats" loading="lazy" data-zoom><figcaption>Une table, un repas</figcaption></figure>
+      <figure><img src="../media/img/story-outdoor-demo.jpg" alt="Le chef Deb cuisinant en plein air pendant un voyage de recherche" loading="lazy" data-zoom><figcaption>Cuisiner sur la route</figcaption></figure>
     </div>
   </div>
 </section>
 
-<!-- LEDGER A8: Chapter 5, Deb's Table removed, no current Deb's Table product. -->
+<section class="chapter teal-block plaster">
+  <div class="wrap split">
+    <div class="rv">
+      <span class="chapter-num">06</span>
+      <h2 class="h2">L&rsquo;ouverture de Deb&rsquo;s, 2019</h2>
+      <p class="lead">Deb a ouvert Deb&rsquo;s Bistro à Lyon à 26 ans, avec très peu d&rsquo;argent, sans voiture, sans réseau familial dans les affaires et sans soutien local sur lequel s&rsquo;appuyer. Il rapportait ses achats de chez Metro et Promocash à vélo, avec une petite remorque. Le restaurant a démarré avec des cartes régionales ambitieuses, qui changeaient régulièrement.</p>
+    </div>
+    <div class="rv">
+      <!-- LEDGER E24: BLOCKED, awaiting early Deb's, the bicycle and cargo trailer -->
+<div class="photo-gap"><span>Photo à venir<br>les débuts de Deb&rsquo;s, le vélo et la remorque</span></div>
+    </div>
+  </div>
+</section>
 
+<section class="chapter">
+  <div class="wrap split">
+    <div class="rv">
+      <!-- LEDGER E25: BLOCKED, awaiting Cooking with Deb, the markets, the reopening period -->
+<div class="photo-gap"><span>Photo à venir<br>Cooking with Deb, les marchés, la période de réouverture</span></div>
+    </div>
+    <div class="rv">
+      <span class="chapter-num">07</span>
+      <h2 class="h2">Pandémie, communauté, reconstruction</h2>
+      <p class="lead">Quelques mois après l&rsquo;ouverture, la pandémie a contraint les restaurants à fermer. Deb a cessé de se verser un salaire et est rentré en Inde, en partie pour réduire ses dépenses. Il a créé les sessions du week-end &laquo;&nbsp;Cooking with Deb&nbsp;&raquo;&nbsp;: les participants achetaient les ingrédients à l&rsquo;avance, cuisinaient avec lui à distance et mangeaient ensemble.</p>
+      <p class="lead" style="margin-top:.9rem">Plus tard, des occasions sur les marchés lyonnais ont aidé le restaurant à retrouver de la visibilité. Les premiers articles et avis étaient arrivés juste avant la fermeture, notamment dans Le Progr&egrave;s et Lyon Tribune, mais l&rsquo;élan habituel d&rsquo;un lancement était perdu. La réouverture est devenue une lente reconstruction, portée par la communauté.</p>
+    </div>
+  </div>
+</section>
 
-<!-- CH 6 -->
-<section class="chapter teal-block plaster" style="padding-bottom:6rem">
-  <div class="wrap center rv">
-    <div class="chapter-num" style="color:var(--mustard-soft)">06</div>
-    <span class="k">La suite</span>
-    <h2 class="h2">L'Inde en France.<br>Un jour, la France en Inde.</h2>
-    <p class="lead" style="margin:1rem auto 2rem">Deb's Bistro est la première page d'un livre plus long : amener les cuisines régionales de l'Inde en France avec le soin d'un bistro aujourd'hui, et porter l'idée bistronomique française vers l'Inde demain. Deux mondes, une table à la fois.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-solid" href="https://debsbistro.fr/fr/booking">Réserver une table</a>
-      <a class="btn btn-ghost" href="menu.html">Voir la carte</a>
+<section class="chapter teal-block plaster">
+  <div class="wrap">
+    <span class="chapter-num">08</span>
+    <h2 class="h2">Une adresse que l&rsquo;on choisit</h2>
+    <p class="lead">Deb&rsquo;s n&rsquo;est pas installé dans un emplacement de premier choix, avec beaucoup de passage. La plupart des clients viennent exprès, après avoir réservé. Aujourd&rsquo;hui, la communauté réunit des habitués lyonnais, des Indiens vivant en France à la recherche d&rsquo;une cuisine régionale, des Français qui ont voyagé ou travaillé en Inde et à qui certaines saveurs manquent, et des personnes qui amènent leurs amis ou leur famille découvrir une culture culinaire indienne plus large.</p>
+    <p class="quote-book" style="color:var(--mustard-soft);margin-top:1.6rem">Pour certains clients, Deb&rsquo;s est une découverte de l&rsquo;Inde. Pour d&rsquo;autres, c&rsquo;est un goût qu&rsquo;ils cherchaient à retrouver.</p>
+    <div class="cook-media">
+      <img src="../media/img/team-table.jpg" alt="L'équipe de Deb's Bistro autour d'une table, dans la salle" loading="lazy" width="1200" height="900">
+      <img src="../media/img/interior-warm-dining.jpg" alt="La salle de Deb's Bistro pendant le service" loading="lazy" width="1271" height="1440">
+    </div>
+  </div>
+</section>
+
+<section class="chapter">
+  <div class="wrap">
+    <span class="chapter-num">09</span>
+    <h2 class="h2">De Lyon à Paris</h2>
+    <p class="lead">Après Deb&rsquo;s Bistro à Lyon sont venus Deb&rsquo;s Street Food à Paris, puis Gully, Indian Street Kitchen. Gully est l&rsquo;évolution du chapitre street food parisien.</p>
+    <div class="signboards">
+      <a class="signboard alt" href="https://gullyparis.com" rel="noopener">Gully, Indian Street Kitchen, Paris</a>
+      <a class="signboard" href="https://www.chefdebdutta.com" rel="noopener">Chef Debdutta Gupta</a>
     </div>
   </div>
 </section>
 
 </main>
-
+<div class="lightbox"><img src="" alt=""></div>
+<div class="sticky-bar">
+  <a class="sb-reserve" href="https://debsbistro.fr/fr/booking">Réserver</a>
+  <a class="sb-menu" href="menu.html">La carte</a>
+</div>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="foot-brand">Deb's Bistro</div>
-        <div class="foot-hindi hindi" lang="hi">धन्यवाद · आते रहिए</div>
-        <p style="margin-top:1rem;font-size:.92rem;max-width:34ch">Une maison, un livre, une porte ouverte sur l'Inde. Lyon 7e, depuis 2019.</p>
-      </div>
-      <div>
-        <h4>Le bistro</h4>
-        <ul>
-          <li><a href="histoire.html">Notre histoire</a></li>
-          <li><a href="menu.html">La carte</a></li>
-          <li><a href="index.html#brunch">Brunch du samedi</a></li>
-          <li><a href="https://debsbistro.fr/fr/booking">Réservations</a></li>
-          <li><a href="https://usellweb.co/shops/debs-bistro">Commander en ligne</a></li>
+        <div class="foot-brand">Deb&rsquo;s Bistro</div>
+        <div class="foot-hindi hindi" lang="hi">&#2342;&#2375;&#2348;&#2381;&#2360; &#2348;&#2367;&#2360;&#2381;&#2340;&#2381;&#2352;&#2379;</div>
+        <ul style="margin-top:1rem">
+          <li>26 Rue Lortet, 69007 Lyon</li>
+          <li>Du lundi au vendredi 12h00&ndash;14h00, 19h00&ndash;23h00</li>
+          <li>Samedi 12h00&ndash;15h00, 19h00&ndash;23h00 &middot; Fermé le dimanche</li>
+          <li><a href="https://debsbistro.fr/fr/booking">Réserver une table</a></li>
+          <li><a href="tel:+33472714911">04 72 71 49 11</a></li>
+          <li><a href="https://usellweb.co/shops/debs-bistro">Commander à emporter</a></li>
         </ul>
       </div>
       <div>
-        <h4>Ailleurs</h4>
+        <h4>Découvrir</h4>
         <ul>
-          <li><a href="https://www.instagram.com/debs_bistro/">Instagram</a></li>
-          <li><a href="https://www.facebook.com/Debsbistroindien/">Facebook</a></li>
-          <li><a href="https://www.chefdebdutta.com">Chef Deb Dutta</a></li>
-          <li><a href="../story.html" lang="en">English version</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="menu.html">La carte</a></li>
+          <li><a href="thali-du-samedi.html">Thali du samedi</a></li>
+          <li><a href="traiteur-evenements.html">Traiteur &amp; événements</a></li>
+          <li><a href="venir.html">Venir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>L&rsquo;univers Deb&rsquo;s</h4>
+        <ul>
+          <li><a href="https://gullyparis.com" rel="noopener">Gully, Indian Street Kitchen, Paris</a></li>
+          <li><a href="https://www.chefdebdutta.com" rel="noopener">Chef Debdutta Gupta, parcours, collaborations &amp; projets</a></li>
+          <li><a href="https://www.instagram.com/debs_bistro/" rel="noopener">Instagram</a></li>
+        </ul>
+        <h4 style="margin-top:1.6rem">Informations légales</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions l&eacute;gales</a></li>
+          <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="confidentialite.html#cookies">Gestion des cookies</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-base">
-      <span>© 2026 Deb's Bistro · 26 Rue Lortet, 69007 Lyon · 04 72 71 49 11</span>
-      <span>Site par <a href="https://www.marketincrew.com">MarketinCrew</a></span>
+      <span>&copy; 2026 Deb&rsquo;s Bistro, Lyon.</span>
+      <span><a href="https://www.marketincrew.com" rel="noopener">Site réalisé par MarketinCrew</a></span>
     </div>
   </div>
 </footer>
-
-<div class="lightbox" role="dialog" aria-label="Image agrandie"><img src="" alt=""></div>
-<script src="../assets/main.js?v=6eacfa0a"></script>
+<script src="../assets/main.js?v=55dd7bc4"></script>
 </body>
 </html>
