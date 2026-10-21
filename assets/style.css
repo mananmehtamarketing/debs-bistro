@@ -355,11 +355,12 @@ footer li{margin:.4rem 0;font-size:.95rem}
 .sticky-bar{display:none}
 @media(max-width:720px){
   .sticky-bar{
-    display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:1100;
+    display:grid;grid-template-columns:repeat(3,1fr);position:fixed;left:0;right:0;bottom:0;z-index:1100;
     border-top:3px solid var(--ink);font-family:var(--sign);text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;
   }
   .sticky-bar a{padding:.95rem .5rem;text-align:center;text-decoration:none}
   .sticky-bar .sb-reserve{background:var(--verm);color:var(--cream)}
+  .sticky-bar .sb-order{background:var(--teal);color:var(--cream);border-left:3px solid var(--ink)}
   .sticky-bar .sb-menu{background:var(--mustard);color:var(--ink);border-left:3px solid var(--ink)}
   body{padding-bottom:3.4rem}
 }
