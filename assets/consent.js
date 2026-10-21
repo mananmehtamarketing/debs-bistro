@@ -51,6 +51,14 @@
     try { localStorage.setItem(KEY, v); } catch (e) {}
     banner.hidden = true;
     if (v === 'accepted') load();
+    else revoke();
+  }
+
+  /* Decline after Accept on the same page stops the tags right away. */
+  function revoke() {
+    if (window.gtag) gtag('consent', 'update', { ad_storage: 'denied', ad_user_data: 'denied',
+      ad_personalization: 'denied', analytics_storage: 'denied' });
+    if (window.fbq) fbq('consent', 'revoke');
   }
   document.getElementById('cookie-accept').addEventListener('click', function () { answer('accepted'); });
   document.getElementById('cookie-refuse').addEventListener('click', function () { answer('refused'); });
