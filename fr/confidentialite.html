@@ -2,9 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD2R2B5R3F"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-JD2R2B5R3F");</script>
+<!-- Measurement: nothing goes to Google or Meta before the visitor accepts cookies (assets/consent.js). -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+window.DS_GA4='G-JD2R2B5R3F';
+window.DS_PIXEL='2224815518444660';
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Politique de confidentialité | Deb's Bistro Lyon</title>
 <meta name="description" content="Politique de confidentialité et informations sur les cookies de Deb's Bistro, Lyon.">
@@ -22,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Oswald:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=e8e7b905">
+<link rel="stylesheet" href="../assets/style.css?v=2026-10-21">
 
 </head>
 <body>
@@ -43,7 +47,7 @@
       <a href="thali-du-samedi.html">Brunch</a>
       <a href="venir.html">Venir</a>
       <a class="lang-pill" href="../privacy.html" hreflang="en" lang="en">EN</a>
-      <a class="btn btn-book nav-reserve" href="reserver.html">Réserver</a>
+      <a class="btn btn-book nav-reserve" href="reserver.html" data-ds-event="click_reserve">Réserver</a>
     </div>
   </div>
 </nav>
@@ -58,7 +62,7 @@
   </div>
 </div></section></main>
 <div class="sticky-bar">
-  <a class="sb-reserve" href="reserver.html">Réserver</a>
+  <a class="sb-reserve" href="reserver.html" data-ds-event="click_reserve">Réserver</a>
   <a class="sb-menu" href="menu.html">La carte</a>
 </div>
 <footer>
@@ -71,7 +75,7 @@
           <li>26 Rue Lortet, 69007 Lyon</li>
           <li>Du lundi au vendredi 12h00&ndash;14h00, 19h00&ndash;23h00</li>
           <li>Samedi 12h00&ndash;15h00, 19h00&ndash;23h00 &middot; Fermé le dimanche</li>
-          <li><a href="reserver.html">Réserver une table</a></li>
+          <li><a href="reserver.html" data-ds-event="click_reserve">Réserver une table</a></li>
           <li><a href="tel:+33472714911">04 72 71 49 11</a></li>
           <li><a href="https://usellweb.co/shops/debs-bistro">Commander à emporter</a></li>
         </ul>
@@ -107,6 +111,8 @@
     </div>
   </div>
 </footer>
-<script src="../assets/main.js?v=55dd7bc4"></script>
+<script src="../assets/main.js?v=2026-10-21"></script>
+<script src="../assets/consent.js?v=2026-10-21"></script>
+<script src="../assets/ds-analytics.js?v=2026-10-21" defer></script>
 </body>
 </html>

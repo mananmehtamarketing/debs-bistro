@@ -241,6 +241,7 @@
       }).then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         msg.className = "form-msg ok show";
+        if (window.DSA) DSA.evenement("groupe_submitted");
         msg.textContent = document.documentElement.lang === "fr"
           ? "Merci. L'équipe de Deb a bien reçu votre demande et revient vers vous directement."
           : "Thank you. Deb's team has received your event brief and will come back to you directly.";

@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD2R2B5R3F"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-JD2R2B5R3F");</script>
+<!-- Measurement: nothing goes to Google or Meta before the visitor accepts cookies (assets/consent.js). -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+window.DS_GA4='G-JD2R2B5R3F';
+window.DS_PIXEL='2224815518444660';
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Deb's Bistro Lyon | Regional Indian Restaurant &amp; Catering</title>
 <meta name="description" content="Regional Indian cooking researched across India and served in Lyon. Lunch Dabbas, sharing dinners, Saturday Thali and catering by Chef Debdutta Gupta.">
@@ -22,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Oswald:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=e8e7b905">
+<link rel="stylesheet" href="assets/style.css?v=2026-10-21">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -77,7 +81,7 @@
       <a href="saturday-thali.html">Brunch</a>
       <a href="visit.html">Visit</a>
       <a class="lang-pill" href="fr/index.html" hreflang="fr" lang="fr">FR</a>
-      <a class="btn btn-book nav-reserve" href="reserve.html">Reserve</a>
+      <a class="btn btn-book nav-reserve" href="reserve.html" data-ds-event="click_reserve">Reserve</a>
     </div>
   </div>
 </nav>
@@ -95,7 +99,7 @@
     <h1>Deb&rsquo;s Bistro</h1>
     <p class="hero-tag">Regional Indian cooking, researched across India and cooked in Lyon.</p>
     <div class="hero-ctas">
-      <a class="btn btn-solid" href="reserve.html">Reserve a table</a>
+      <a class="btn btn-solid" href="reserve.html" data-ds-event="click_reserve">Reserve a table</a>
       <a class="btn btn-ghost" href="menu.html">See the menu</a>
     </div>
   </div>
@@ -328,7 +332,7 @@
         <a href="tel:+33472714911" style="color:var(--mustard-soft)">+33 4 72 71 49 11</a>
       </div>
       <div class="signboards">
-        <a class="signboard alt" href="reserve.html">Reserve a table</a>
+        <a class="signboard alt" href="reserve.html" data-ds-event="click_reserve">Reserve a table</a>
         <a class="signboard" href="visit.html">Hours &amp; directions</a>
       </div>
     </div>
@@ -367,11 +371,11 @@
   </div>
   <div class="wrap foot-note">
     <a href="https://www.instagram.com/debs_bistro/" rel="noopener">Follow @debs_bistro</a>
-    <a href="reserve.html">Reserve a table</a>
+    <a href="reserve.html" data-ds-event="click_reserve">Reserve a table</a>
   </div>
 </section>
 <div class="sticky-bar">
-  <a class="sb-reserve" href="reserve.html">Reserve</a>
+  <a class="sb-reserve" href="reserve.html" data-ds-event="click_reserve">Reserve</a>
   <a class="sb-menu" href="menu.html">Menu</a>
 </div>
 <footer>
@@ -384,7 +388,7 @@
           <li>26 Rue Lortet, 69007 Lyon</li>
           <li>Mon to Fri 12:00&ndash;14:00, 19:00&ndash;23:00</li>
           <li>Sat 12:00&ndash;15:00, 19:00&ndash;23:00 &middot; Sun closed</li>
-          <li><a href="reserve.html">Reserve a table</a></li>
+          <li><a href="reserve.html" data-ds-event="click_reserve">Reserve a table</a></li>
           <li><a href="tel:+33472714911">+33 4 72 71 49 11</a></li>
           <li><a href="https://usellweb.co/shops/debs-bistro">Order for takeaway</a></li>
         </ul>
@@ -420,6 +424,8 @@
     </div>
   </div>
 </footer>
-<script src="assets/main.js?v=55dd7bc4"></script>
+<script src="assets/main.js?v=2026-10-21"></script>
+<script src="assets/consent.js?v=2026-10-21"></script>
+<script src="assets/ds-analytics.js?v=2026-10-21" defer></script>
 </body>
 </html>
