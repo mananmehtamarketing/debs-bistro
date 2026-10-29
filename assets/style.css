@@ -651,3 +651,7 @@ section:not(.teal-block) .trail-note{color:var(--verm)}
 .cb-btn{min-height:46px;padding:10px 20px;font-family:var(--sign);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;cursor:pointer;background:transparent;color:var(--cream);border:2px solid var(--cream);border-radius:4px 14px 4px 14px}
 #cookie-accept{background:var(--verm);border-color:var(--verm)}
 @media (max-width:720px){#cookie-banner{bottom:calc(64px + env(safe-area-inset-bottom,0px))}}
+
+/* Restomatik booking: phone line only if the module fails to load */
+.rm-fallback{display:none;text-align:center}
+.rm-failed .rm-fallback{display:block}
